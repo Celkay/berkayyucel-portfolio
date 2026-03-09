@@ -100,7 +100,13 @@ const dictionary = {
         ton_dev3: "<strong>Karar Ağacı Yapısı:</strong> Oyuncunun seçimlerine bağlı olarak hikaye akışını yönlendiren \"Node\" (düğüm) tabanlı JSON veri mimarisi entegre edildi.",
         ton_goals_title: "<i class=\"fa-solid fa-list-check\" style=\"color:var(--accent-secondary);\"></i> İleriki Geliştirme Hedefleri:",
         ton_g1: "Dalgalanan ve daha derin diyalog ağaçlarının JSON dosyalarına uyarlanması.",
-        ton_g2: "Sayfa çevirme ve rüzgar hışırtısı gibi temel işitsel geri bildirimlerin eklenmesi."
+        ton_g2: "Sayfa çevirme ve rüzgar hışırtısı gibi temel işitsel geri bildirimlerin eklenmesi.",
+
+        // Sentinel
+        sen_role: "Rol: Lead Developer",
+        sen_badge: "Tamamlanmak Üzere",
+        sen_summary_title: "<i class=\"fa-solid fa-info-circle\" style=\"color:var(--accent-primary);\"></i> Durum:",
+        sen_summary: " Proforması çizilen ve güvenlik / analitik odaklı geliştirilen bu uygulama son aşamalarına gelmiştir. Yakında erişime açılacaktır."
     },
     en: {
         // Navbar
@@ -227,7 +233,13 @@ const dictionary = {
         mq_t3: "<strong>Test Automation (Playwright):</strong> Prototyping E2E test scenarios specifically guaranteeing core functionality (Login, Assigning Tasks) operates seamlessly.",
         mq_goals_title: "<i class=\"fa-solid fa-chart-line\" style=\"color:var(--accent-secondary);\"></i> Product Goals:",
         mq_g1: "<strong>Teacher Onboarding:</strong> Strategies developed to intuit tool usage, minimizing Time-to-Value metrics during initial feature adoption.",
-        mq_g2: "<strong>Student Motivation:</strong> Experimental tracking investigating whether gamified progression maps elevate long-term retention rates relative to standard testing procedures."
+        mq_g2: "<strong>Student Motivation:</strong> Experimental tracking investigating whether gamified progression maps elevate long-term retention rates relative to standard testing procedures.",
+
+        // Sentinel
+        sen_role: "Role: Lead Developer",
+        sen_badge: "Nearing Completion",
+        sen_summary_title: "<i class=\"fa-solid fa-info-circle\" style=\"color:var(--accent-primary);\"></i> Status:",
+        sen_summary: " This security and analytics-focused application, whose structural design is finalized, has reached its concluding stages of development. It will be available shortly."
     }
 };
 
