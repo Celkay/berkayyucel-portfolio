@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap');
+
+/* =============================
+   GAMES THEME (Dark Fantasy / DnD / BG3 Style)
+============================= */
+
+:root {
+    /* Dark tavern / Leather / Bark background */
+    --bg-dark: #1a1513;
+
+    /* Parchment tinted cards */
+    --bg-card: rgba(38, 28, 24, 0.85);
+
+    /* Bronze / Muted Gold glass borders */
+    --border-glass: rgba(204, 169, 102, 0.25);
+
+    /* Warm parchment text styles */
+    --text-main: #ecdac5;
+    --text-muted: #af9c88;
+
+    /* Magic / Royal Accents */
+    --accent-primary: #d4af37;
+    /* Metallic Gold */
+    --accent-secondary: #8b0000;
+    /* Deep Health Potion Red */
+    --gradient-glow: linear-gradient(135deg, rgba(212, 175, 55, 0.2), rgba(139, 0, 0, 0.2));
+
+    /* Fonts: Cinzel for headers (BG3/Fantasy feel), Lora for reading text like a book */
+    --font-heading: 'Cinzel', serif;
+    --font-body: 'Lora', serif;
+}
+
+body {
+    background-image: radial-gradient(circle at center, #241d1a 0%, #110e0c 100%);
+}
+
+/* Update glow effects to match the magic/fantasy theme */
+.glow-1 {
+    background: radial-gradient(circle, #d4af37 0%, transparent 70%);
+    opacity: 0.3;
+}
+
+.glow-2 {
+    background: radial-gradient(circle, #8b0000 0%, transparent 70%);
+    opacity: 0.25;
+}
+
+/* Modifying standard features to look more "medieval/parchment" */
+.glass-card {
+    border-radius: 4px;
+    /* Less rounded corners, more book-like */
+    border: 1px solid var(--border-glass);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), inset 0 0 20px rgba(0, 0, 0, 0.6);
+}
+
+.glass-card:hover {
+    border-color: rgba(212, 175, 55, 0.6);
+    box-shadow: 0 10px 40px rgba(212, 175, 55, 0.1), inset 0 0 20px rgba(0, 0, 0, 0.6);
+}
+
+.protected-card {
+    background: rgba(25, 18, 15, 0.8);
+    border: 1px solid rgba(212, 175, 55, 0.3);
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #a18121, #6e1010);
+    box-shadow: 0 4px 15px rgba(161, 129, 33, 0.4);
+    border: 1px solid #d4af37;
+    border-radius: 2px;
+}
+
+.btn-primary:hover {
+    box-shadow: 0 6px 20px rgba(161, 129, 33, 0.6);
+}
+
+.btn-secondary {
+    border-radius: 2px;
+    border: 1px solid var(--border-glass);
+}
+
+/* Custom Scrollbar for RPG Feel */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #110e0c;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #5c4a3d;
+    border: 1px solid #241d1a;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #d4af37;
+}

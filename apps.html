@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolyo | Product Manager & Game Designer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;900&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="apps-theme.css">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="background-effects">
+        <div class="glow glow-1"></div>
+        <div class="glow glow-2"></div>
+    </div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-text">BY<span class="highlight">.</span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" data-i18n="apps_nav_home">Ana Sayfa</a></li>
+                <li><a href="games.html" data-i18n="apps_nav_games">Oyunlar</a></li>
+            </ul>
+            <div style="display: flex; gap: 1rem; align-items: center;">
+                <a href="#" id="lang-toggle"
+                    style="color: var(--text-primary); text-decoration: none; font-weight: 600; font-size: 0.9rem; padding: 0.5rem; transition: color 0.3s;"><i
+                        class="fa-solid fa-globe"></i> EN</a>
+                <a href="#iletisim-bolumu" class="btn btn-primary btn-small" data-i18n="nav_contact">İletişime Geç</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero"
+        style="padding: 100px 0 50px 0; text-align: center; border-bottom: 1px solid rgba(255,255,255,0.05);">
+        <div class="container hero-content" style="max-width: 800px; margin: 0 auto; padding-top: 2rem;">
+            <div class="badge" style="margin: 0 auto 1.5rem auto;" data-i18n="apps_hero_badge">SaaS, EdTech & Ürün
+                Tasarımı</div>
+            <h1 class="hero-title" style="font-size: 3rem;" data-i18n="apps_hero_title_1">Veri, UX ve <span
+                    class="highlight-gradient">Çözümler</span>
+            </h1>
+            <p class="hero-subtitle" style="font-size: 1.1rem; max-width: 600px; margin: 0 auto 2rem auto;"
+                data-i18n="apps_hero_subtitle">Kullanıcı
+                deneyimini güçlendiren, analitik altyapısı sağlam, problemi merkeze alan ürün projelerim.</p>
+        </div>
+    </header>
+    <section id="gizli-projeler" class="section dark-section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="apps_section_title">Seçili & Korumalı Projeler</h2>
+            <p class="section-desc" data-i18n="apps_section_desc">Fikri mülkiyet (IP) ve henüz piyasaya sürülmemiş
+                mekanikler nedeniyle temel
+                hatlarıyla paylaştığım yönetsel tasarımlarım.</p>
+
+            <div class="glass-card protected-card">
+                <div class="protected-header">
+                    <div class="project-info">
+                        <h3>SaaS & EdTech: <span class="highlight">"MathQuest"</span> (EduPlay Analytics)</h3>
+                        <span class="role" data-i18n="mq_role">Rol: Lead Developer & Product Creator</span>
+                    </div>
+                    <div class="lock-icon"
+                        style="color: #4ade80; border-color: rgba(74, 222, 128, 0.2); background: rgba(74, 222, 128, 0.1);">
+                        <i class="fa-solid fa-flask"></i>
+                        <span data-i18n="mq_badge">Kapalı Beta Açıldı</span>
+                    </div>
+                </div>
+                <div class="protected-body">
+                    <p><strong data-i18n="mq_summary_title"><i class="fa-solid fa-magnifying-glass"
+                                style="color:var(--accent-primary);"></i> Proje
+                            Hakkında:</strong><span data-i18n="mq_summary"> Öğrenci motivasyonunu artırmayı hedefleyen,
+                            oyunlaştırılmış dijital bir
+                            ödev ve ölçme-değerlendirme platformu ("EduPlay Analytics"). Geleneksel LMS (Learning
+                            Management System) araçlarının karmaşıklığından uzak, öğretmenler için analitik takibi
+                            kolaylaştıran
+                            bir SaaS konsepti.</span></p>
+
+                    <p class="mt-4"><strong data-i18n="mq_dev_title"><i class="fa-solid fa-lightbulb"
+                                style="color:var(--accent-primary);"></i>
+                            Geliştirme Yaklaşımım:</strong><span data-i18n="mq_dev"> Öğretmen ve öğrenci rollerini tek
+                            çatı altında birleştiren
+                            bütünleşik bir mimari kurgulandı. Öğrenciler test çözdükçe XP kazanıp seviye atlayarak
+                            harita
+                            üzerinde ("Subject Maps") ilerliyor. Öğretmenler ise A/B test prensiplerinden
+                            ilham aldığım minimalist bir arayüzle hızlı ödev atamaları ve performans takibi
+                            yapabiliyor.</span></p>
+
+                    <div class="grid grid-2 mt-4" style="gap: 1.5rem; align-items: start;">
+                        <div>
+                            <strong data-i18n="mq_tech_title"><i class="fa-solid fa-sitemap"
+                                    style="color:var(--accent-secondary);"></i> Teknik ve
+                                Tasarım Deneyimlerim:</strong>
+                            <ul class="stats-list">
+                                <li data-i18n="mq_t1"><strong>Rol-Tabanlı UX:</strong> Farklı ihtiyaçlara sahip iki ana
+                                    kullanıcı
+                                    (Öğrenci/Öğretmen) için aynı veri tabanından beslenen ayrı UI akışları ve
+                                    görselleştirmeler tasarlama.</li>
+                                <li data-i18n="mq_t2"><strong>Veri Görselleştirme:</strong> Öğrencilerin hata yaptığı
+                                    konu dağılımlarını
+                                    (Mistake Bank) ve anlık liderlik tablolarını (Leaderboard) yönetilebilir
+                                    pencerelerde sunma.</li>
+                                <li data-i18n="mq_t3"><strong>Test Otomasyonu (Playwright):</strong> Temel kullanıcı
+                                    senaryolarının
+                                    (Login,
+                                    Görev Atama) hatasız çalıştığını doğrulamak için E2E test senaryoları pratiği.</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <strong data-i18n="mq_goals_title"><i class="fa-solid fa-chart-line"
+                                    style="color:var(--accent-secondary);"></i> Ürün
+                                Odaklı Hedefler:</strong>
+                            <ul class="stats-list">
+                                <li data-i18n="mq_g1"><strong>Öğretmen Onboarding:</strong> Sistemin kullanımını
+                                    sezgisel hale getirip,
+                                    yeni bir aracın öğrenme süresini (Time-to-Value) en aza indirme stratejileri.</li>
+                                <li data-i18n="mq_g2"><strong>Öğrenci Motivasyonu:</strong> Oyunlaştırılmış harita
+                                    hissinin, klasik test
+                                    çözme sürecine kıyasla devamlılık (retention) oranlarını artırıp artıramayacağına
+                                    dair deney tasarımları.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="project-gallery mt-4">
+                        <img src="assets/login_screen_1772501841439.png" alt="EduQuest Login" class="gallery-img">
+                        <img src="assets/student_adventure_map_1772502242919.png" alt="EduQuest Macera Haritası"
+                            class="gallery-img">
+                        <img src="assets/student_leaderboard_1772502250462.png" alt="EduQuest Liderlik Tablosu"
+                            class="gallery-img">
+                        <img src="assets/student_assignments_1772502246847.png" alt="EduQuest Öğrenci Paneli"
+                            class="gallery-img">
+                        <img src="assets/student_mistake_bank_1772502380598.png" alt="EduQuest Hata Defteri"
+                            class="gallery-img">
+                    </div>
+                </div>
+            </div>
+
+
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <button class="lightbox-prev"><i class="fa-solid fa-chevron-left"></i></button>
+        <img class="lightbox-content" id="lightbox-img">
+        <button class="lightbox-next"><i class="fa-solid fa-chevron-right"></i></button>
+    </div>
+
+    <section id="iletisim-bolumu" class="section dark-section">
+        <div class="container" style="text-align: center;">
+            <h2 class="section-title" data-i18n="contact_title">İletişime Geçin</h2>
+            <p class="section-desc" style="margin: 0 auto; text-align: center;" data-i18n="contact_desc">Yeni projeler,
+                işbirlikleri veya sadece
+                tanışmak için bana aşağıdaki kanallardan
+                ulaşabilirsiniz.</p>
+
+            <div class="grid grid-3" style="margin-top: 3rem;">
+                <a href="mailto:berkayyucl@gmail.com" class="glass-card"
+                    style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-decoration: none; color: inherit;">
+                    <div class="card-icon" style="font-size: 2.5rem; color: var(--accent-primary);"><i
+                            class="fa-solid fa-envelope"></i></div>
+                    <h3 style="margin-top: 1rem;">E-Posta</h3>
+                    <p style="color: var(--text-secondary);">berkayyucl@gmail.com</p>
+                </a>
+                <a href="https://www.linkedin.com/in/berkay-yücel/" target="_blank" rel="noopener noreferrer"
+                    class="glass-card"
+                    style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-decoration: none; color: inherit;">
+                    <div class="card-icon" style="font-size: 2.5rem; color: #0077b5;"><i
+                            class="fa-brands fa-linkedin"></i></div>
+                    <h3 style="margin-top: 1rem;">LinkedIn</h3>
+                    <p style="color: var(--text-secondary);">profilimi incele</p>
+                </a>
+                <a href="tel:+905558988960" class="glass-card"
+                    style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-decoration: none; color: inherit;">
+                    <div class="card-icon" style="font-size: 2.5rem; color: #4ade80;"><i class="fa-solid fa-phone"></i>
+                    </div>
+                    <h3 style="margin-top: 1rem;">Telefon</h3>
+                    <p style="color: var(--text-secondary);">+90 555 898 89 60</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <script src="lang.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

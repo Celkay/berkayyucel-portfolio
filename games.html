@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolyo | Product Manager & Game Designer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;900&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="games-theme.css">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="background-effects">
+        <div class="glow glow-1"></div>
+        <div class="glow glow-2"></div>
+    </div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-text">BY<span class="highlight">.</span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" data-i18n="games_nav_home">Ana Sayfa</a></li>
+                <li><a href="apps.html" data-i18n="nav_apps">Uygulamalar</a></li>
+            </ul>
+            <div style="display: flex; gap: 1rem; align-items: center;">
+                <a href="#" id="lang-toggle"
+                    style="color: var(--text-primary); text-decoration: none; font-weight: 600; font-size: 0.9rem; padding: 0.5rem; transition: color 0.3s;"><i
+                        class="fa-solid fa-globe"></i> EN</a>
+                <a href="#iletisim-bolumu" class="btn btn-primary btn-small" data-i18n="nav_contact">İletişime Geç</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero"
+        style="padding: 100px 0 50px 0; text-align: center; border-bottom: 1px solid rgba(255,255,255,0.05);">
+        <div class="container hero-content" style="max-width: 800px; margin: 0 auto; padding-top: 2rem;">
+            <div class="badge" style="margin: 0 auto 1.5rem auto;" data-i18n="games_hero_badge">Oyun & Mekanik Tasarımı
+            </div>
+            <h1 class="hero-title" style="font-size: 3rem;" data-i18n="games_hero_title_1">Hikayeler ve <span
+                    class="highlight-gradient">Mekanikler</span></h1>
+            <p class="hero-subtitle" style="font-size: 1.1rem; max-width: 600px; margin: 0 auto 2rem auto;"
+                data-i18n="games_hero_subtitle">Tasarladığım
+                fantastik evrenler, prototiplediğim oyun döngüleri ve interaktif deneyimler.</p>
+        </div>
+    </header>
+    <section id="gizli-projeler" class="section dark-section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="games_section_title">Öne Çıkan Oyun Projeleri</h2>
+            <p class="section-desc" data-i18n="games_section_desc">Solo bir geliştirici olarak mimarisini, sistem
+                tasarımını ve temel mekaniklerini
+                sıfırdan inşa ettiğim kapsamlı oyun projelerim.</p>
+
+            <div class="glass-card protected-card mb-5" style="margin-bottom: 2rem;">
+                <div class="protected-header">
+                    <div class="project-info">
+                        <h3><span class="highlight">"3rd Dimension"</span> - 3D Tactical Chess</h3>
+                        <span class="role" data-i18n="trdd_role">Rol: Bireysel Geliştirici (Solo Developer) | Platform:
+                            PC / Bağımsız Sürüm |
+                            Durum: Yayında (Itch.io)</span>
+                    </div>
+                    <div class="lock-icon"
+                        style="color: #60a5fa; border-color: rgba(96, 165, 250, 0.2); background: rgba(96, 165, 250, 0.1);">
+                        <i class="fa-solid fa-chess-knight"></i>
+                        <span data-i18n="trdd_badge">Tamamen Açık Statik Sürüm</span>
+                    </div>
+                </div>
+                <div class="protected-body">
+                    <p><strong data-i18n="trdd_summary_title"><i class="fa-solid fa-play"
+                                style="color:var(--accent-primary);"></i> Proje
+                            Özeti:</strong><span data-i18n="trdd_summary"> Standart satranç kurallarını "yükseklik" ve
+                            "görüş açısı (Line of Sight)"
+                            mekanikleriyle birleştiren, tam 3D taktiksel bir strateji oyunu.</span></p>
+
+                    <p class="mt-4"><strong data-i18n="trdd_focus_title"><i class="fa-solid fa-layer-group"
+                                style="color:var(--accent-primary);"></i>
+                            Geliştirme Odakları:</strong> Custom 3D Engine Architecture, Algorithmic State Management,
+                        Local Minimax AI, P2P Networking</p>
+
+                    <div class="grid grid-2 mt-4" style="gap: 1.5rem; align-items: start;">
+                        <div>
+                            <strong data-i18n="trdd_features_title"><i class="fa-solid fa-star"
+                                    style="color:var(--accent-secondary);"></i> Öne Çıkan
+                                Özellikler & Oyun Mekanikleri:</strong>
+                            <ul class="stats-list mt-2">
+                                <li data-i18n="trdd_f1"><strong>Yükseklik (Elevation) Sistemi:</strong> Oyun tahtası üç
+                                    farklı yükseklik
+                                    seviyesinden (Çukur, Zemin, Kule) oluşur.</li>
+                                <li data-i18n="trdd_f2"><strong>Görüş Açısı (Line of Sight):</strong> Kale, Fil ve Vezir
+                                    hareketleri tepeler
+                                    tarafından engellenerek siper alma ve pusu kurma dinamikleri yaratır.</li>
+                                <li data-i18n="trdd_f3"><strong>Çevrimdışı Yapay Zeka (Local PvE):</strong> Özel bir
+                                    Minimax algoritmik
+                                    yapay zeka, standart taş değerlerinin yanı sıra 3D yükseklik avantajlarını ve merkez
+                                    kontrolünü hesaplar.</li>
+                                <li data-i18n="trdd_f4"><strong>P2P Çok Oyunculu Mod:</strong> Oyuncular "Portal Rünü"
+                                    ile doğrudan bir
+                                    sunucu maliyeti olmadan P2P ağ üzerinden birbirine bağlanarak oynayabilir.</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <strong data-i18n="trdd_achievements_title"><i class="fa-solid fa-wrench"
+                                    style="color:var(--accent-secondary);"></i> Teknik
+                                Başarılar / Çözülen Zorluklar:</strong>
+                            <ul class="stats-list mt-2">
+                                <li data-i18n="trdd_a1"><strong>2D Motoru 3D Entegre Etmek:</strong> Çekirdek 2D satranç
+                                    mantığının üzerine
+                                    yükseklik haritası (Height Map) sarmalayıcısı (wrapper) yazılarak 3 boyuta
+                                    uyarlandı.</li>
+                                <li data-i18n="trdd_a2"><strong>Performanslı Local AI:</strong> Limitli işlem gücü
+                                    kısıtlamalarına
+                                    rağmen Alpha-Beta budaması optimize edildi ve YZ'ye yükseklik tutma (Heuristic)
+                                    mantığı önceliklendirildi.</li>
+                                <li data-i18n="trdd_a3"><strong>İstemci Tabanlı (Client-side) Mimari:</strong> Tamamen
+                                    oyuncu cihazında
+                                    çalışan sunucusuz (Serverless) tasarım optimizasyonu ve hafif veri boyutu sağlandı.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="project-gallery mt-4">
+                        <img src="assets/cover_default.png" alt="3rd Dimension" class="gallery-img">
+                        <img src="assets/cover_isometric.png" alt="3rd Dimension" class="gallery-img">
+                        <img src="assets/screenshot_1.png" alt="3rd Dimension" class="gallery-img">
+                        <img src="assets/screenshot_2.png" alt="3rd Dimension" class="gallery-img">
+                    </div>
+                </div>
+            </div>
+
+            <div class="glass-card protected-card">
+                <div class="protected-header">
+                    <div class="project-info">
+                        <h3>Oyun & EdTech: <span class="highlight">"Word Tycoon"</span></h3>
+                        <span class="role" data-i18n="wt_role">Rol: Geliştirici & Ürün Öğrencisi</span>
+                    </div>
+                    <div class="lock-icon"
+                        style="color: #4ade80; border-color: rgba(74, 222, 128, 0.2); background: rgba(74, 222, 128, 0.1);">
+                        <i class="fa-solid fa-code-commit"></i>
+                        <span data-i18n="wt_badge">MVP & Geliştirme Sürecinde</span>
+                    </div>
+                </div>
+                <div class="protected-body">
+                    <p><strong data-i18n="wt_summary_title"><i class="fa-solid fa-gamepad"
+                                style="color:var(--accent-primary);"></i> Proje
+                            Özeti:</strong><span data-i18n="wt_summary"> Eğitim ile rekabeti harmanlayan, kelime
+                            öğrenmeyi PvP (Player vs Player) bir
+                            arena deneyimine dönüştüren mobil oyun çalışması. Oyuncuların kendi seviyelerindeki
+                            rakiplerle
+                            eşleşip,
+                            doğru kelimeleri bularak lig atladığı bir yapı kurgulandı.</span></p>
+
+                    <p class="mt-4"><strong data-i18n="wt_design_title"><i class="fa-solid fa-lightbulb"
+                                style="color:var(--accent-primary);"></i>
+                            Tasarım & Geliştirme Süreci:</strong><span data-i18n="wt_design"> Geleneksel dil öğrenme
+                            uygulamalarının tekdüzeliğini
+                            kırmak
+                            amacıyla, kelime pratiklerini maç mantığına oturttum. Oyuncunun maça "Altın" (Entry Fee)
+                            ödeyerek
+                            girmesi ve kazandığı kaynaklarla yeni Power-Up'lar alması üzerine temel bir Core Loop
+                            tasarlandı.</span></p>
+
+                    <div class="grid grid-2 mt-4" style="gap: 1.5rem; align-items: start;">
+                        <div>
+                            <strong data-i18n="wt_tech_title"><i class="fa-solid fa-code"
+                                    style="color:var(--accent-secondary);"></i> Teknik ve
+                                Tasarım Deneyimlerim:</strong>
+                            <ul class="stats-list">
+                                <li data-i18n="wt_t1"><strong>Oyun Ekonomisi:</strong> Maç giriş ücretlerinin, ödüllerin
+                                    ve power-up
+                                    maliyetlerinin dengelenmesi üzerine pratikler.</li>
+                                <li data-i18n="wt_t2"><strong>User Flow Dizaynı:</strong> Matchmaking ve lobi
+                                    akışlarının kullanıcıyı
+                                    yormayacak sadelikte tasarlanması.</li>
+                                <li data-i18n="wt_t3"><strong>Oyunlaştırma (Gamification):</strong> Eğitim sürecini
+                                    zorunlu bir görevden
+                                    ziyade rekabetçi bir amaca dönüştürme denemeleri.</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <strong data-i18n="wt_dyn_title"><i class="fa-solid fa-bullseye"
+                                    style="color:var(--accent-secondary);"></i>
+                                Hedeflenen
+                                Dinamikler:</strong>
+                            <ul class="stats-list">
+                                <li data-i18n="wt_d1"><strong>Rövanş Psikolojisi:</strong> Kayıp sonrası oyuncunun
+                                    tekrar maça girme
+                                    isteğini destekleyecek UI/UX yönlendirmeleri.</li>
+                                <li data-i18n="wt_d2"><strong>Kısa Oturumlar:</strong> Mobil platforma uygun, 5-10
+                                    dakikalık hızlı maç
+                                    dizaynları.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="project-gallery mt-4">
+                        <!-- 1 --> <img src="assets/WhatsApp Image 2026-03-09 at 02.07.35.jpeg"
+                            alt="Word Tycoon Screenshot" class="gallery-img">
+                        <!-- 2 --> <img src="assets/WhatsApp Image 2026-03-09 at 02.07.35 (1).jpeg"
+                            alt="Word Tycoon Screenshot" class="gallery-img">
+                        <!-- 3 --> <img src="assets/WhatsApp Image 2026-03-09 at 02.07.35 (2).jpeg"
+                            alt="Word Tycoon Screenshot" class="gallery-img">
+                        <!-- 5 --> <img src="assets/WhatsApp Image 2026-03-09 at 02.07.35 (4).jpeg"
+                            alt="Word Tycoon Screenshot" class="gallery-img">
+                        <!-- 4 --> <img src="assets/WhatsApp Image 2026-03-09 at 02.07.35 (3).jpeg"
+                            alt="Word Tycoon Screenshot" class="gallery-img">
+
+                        <!-- 6 --> <img src="assets/WhatsApp Image 2026-03-09 at 02.07.39.jpeg"
+                            alt="Word Tycoon Screenshot" class="gallery-img">
+                        <!-- 7 REMOVED: src="assets/WhatsApp Image 2026-03-09 at 02.07.39 (1).jpeg" -->
+                        <!-- 8 --> <img src="assets/WhatsApp Image 2026-03-09 at 02.07.39 (2).jpeg"
+                            alt="Word Tycoon Screenshot" class="gallery-img">
+
+                        <!-- 9 --> <img src="assets/WhatsApp Image 2026-03-09 at 02.07.40.jpeg"
+                            alt="Word Tycoon Screenshot" class="gallery-img">
+                        <!-- 11 --> <img src="assets/WhatsApp Image 2026-03-09 at 02.07.40 (2).jpeg"
+                            alt="Word Tycoon Screenshot" class="gallery-img">
+                        <!-- 10 --> <img src="assets/WhatsApp Image 2026-03-09 at 02.07.40 (1).jpeg"
+                            alt="Word Tycoon Screenshot" class="gallery-img">
+                        <!-- 12 --> <img src="assets/WhatsApp Image 2026-03-09 at 02.07.40 (3).jpeg"
+                            alt="Word Tycoon Screenshot" class="gallery-img">
+                        <!-- 13 --> <img src="assets/WhatsApp Image 2026-03-09 at 02.07.40 (4).jpeg"
+                            alt="Word Tycoon Screenshot" class="gallery-img">
+
+                        <!-- 16 --> <img src="assets/WhatsApp Image 2026-03-09 at 02.07.41 (1).jpeg"
+                            alt="Word Tycoon Screenshot" class="gallery-img">
+                        <!-- 15 --> <img src="assets/WhatsApp Image 2026-03-09 at 02.07.41.jpeg"
+                            alt="Word Tycoon Screenshot" class="gallery-img">
+                        <!-- 14 --> <img src="assets/WhatsApp Image 2026-03-09 at 02.07.40 (5).jpeg"
+                            alt="Word Tycoon Screenshot" class="gallery-img">
+
+                        <!-- 17 --> <img src="assets/WhatsApp Image 2026-03-09 at 02.11.55.jpeg"
+                            alt="Word Tycoon Screenshot" class="gallery-img">
+                        <!-- 18 --> <img src="assets/WhatsApp Image 2026-03-09 at 02.11.55 (1).jpeg"
+                            alt="Word Tycoon Screenshot" class="gallery-img">
+                        <!-- 19 --> <img src="assets/WhatsApp Image 2026-03-09 at 02.11.55 (2).jpeg"
+                            alt="Word Tycoon Screenshot" class="gallery-img">
+                        <!-- 20 --> <img src="assets/WhatsApp Image 2026-03-09 at 02.11.55 (3).jpeg"
+                            alt="Word Tycoon Screenshot" class="gallery-img">
+                        <!-- 21 --> <img src="assets/WhatsApp Image 2026-03-09 at 02.11.55 (4).jpeg"
+                            alt="Word Tycoon Screenshot" class="gallery-img">
+
+                        <!-- 22 --> <img src="assets/WhatsApp Image 2026-03-09 at 02.11.56.jpeg"
+                            alt="Word Tycoon Screenshot" class="gallery-img">
+
+                        <!-- 25 --> <img src="assets/WhatsApp Image 2026-03-09 at 02.15.00.jpeg"
+                            alt="Word Tycoon Screenshot" class="gallery-img">
+                        <!-- 24 --> <img src="assets/WhatsApp Image 2026-03-09 at 02.11.56 (2).jpeg"
+                            alt="Word Tycoon Screenshot" class="gallery-img">
+                        <!-- 23 --> <img src="assets/WhatsApp Image 2026-03-09 at 02.11.56 (1).jpeg"
+                            alt="Word Tycoon Screenshot" class="gallery-img">
+                    </div>
+                </div>
+            </div>
+
+            <div class="glass-card protected-card mt-4">
+                <div class="protected-header">
+                    <div class="project-info">
+                        <h3>Etkileşimli Hikaye: <span class="highlight">"Tales of Nart"</span></h3>
+                        <span class="role" data-i18n="ton_role">Rol: Geliştirici & Programcı</span>
+                    </div>
+                    <div class="lock-icon"
+                        style="color: #fbbf24; border-color: rgba(251, 191, 36, 0.2); background: rgba(251, 191, 36, 0.1);">
+                        <i class="fa-solid fa-book-journal-whills"></i>
+                        <span data-i18n="ton_badge">Geliştirme Aşamasında (WIP)</span>
+                    </div>
+                </div>
+                <div class="protected-body">
+                    <p><strong data-i18n="ton_summary_title"><i class="fa-solid fa-book-open"
+                                style="color:var(--accent-primary);"></i> Proje
+                            Özeti:</strong><span data-i18n="ton_summary"> Klasik destanlardan ilham alan etkileşimli bir
+                            3 boyutlu hikaye projesi.
+                            Özel render teknikleriyle metin tabanlı fantastik bir kitabın
+                            fiziksel yapısını simüle etmeyi amaçlayan deneysel bir prototip.</span></p>
+
+                    <p class="mt-4"><strong data-i18n="ton_dev_title"><i class="fa-solid fa-wrench"
+                                style="color:var(--accent-primary);"></i>
+                            Uygulanan Geliştirmeler:</strong></p>
+                    <ul class="stats-list mt-2">
+                        <li data-i18n="ton_dev1"><strong>Dinamik Sayfalama Mantığı:</strong> Metinlerin sayfa dışına
+                            taşmasını önlemek
+                            için dinamik görünümlü bir paragraf ölçüm ve aktarım sistemi kodlandı.</li>
+                        <li data-i18n="ton_dev2"><strong>Daktilo Animasyonu:</strong> Yazıların eşzamanlı belirmesi
+                            yerine, tıklama ve
+                            basılı tutma durumlarına göre hızlanan harf akışı sağlayan bir render sistemi geliştirildi.
+                        </li>
+                        <li data-i18n="ton_dev3"><strong>Karar Ağacı Yapısı:</strong> Oyuncunun seçimlerine bağlı olarak
+                            hikaye akışını
+                            yönlendiren "Node" (düğüm) tabanlı JSON veri mimarisi entegre edildi.</li>
+                    </ul>
+
+                    <div class="mt-4" style="align-items: start;">
+                        <div>
+                            <strong data-i18n="ton_goals_title"><i class="fa-solid fa-list-check"
+                                    style="color:var(--accent-secondary);"></i>
+                                İleriki
+                                Geliştirme Hedefleri:</strong>
+                            <ul class="stats-list mt-2">
+                                <li data-i18n="ton_g1">Dalgalanan ve daha derin diyalog ağaçlarının JSON dosyalarına
+                                    uyarlanması.</li>
+                                <li data-i18n="ton_g2">Sayfa çevirme ve rüzgar hışırtısı gibi temel işitsel geri
+                                    bildirimlerin eklenmesi.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="project-gallery mt-4">
+                        <img src="assets/2_gameplay_typewriter_flow.webp" alt="Tales of Nart Daktilo Akışı"
+                            class="gallery-img">
+                        <img src="assets/3_branching_choices.png" alt="Tales of Nart Seçim Akışı" class="gallery-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <button class="lightbox-prev"><i class="fa-solid fa-chevron-left"></i></button>
+        <img class="lightbox-content" id="lightbox-img">
+        <button class="lightbox-next"><i class="fa-solid fa-chevron-right"></i></button>
+    </div>
+
+    <section id="iletisim-bolumu" class="section dark-section">
+        <div class="container" style="text-align: center;">
+            <h2 class="section-title" data-i18n="contact_title">İletişime Geçin</h2>
+            <p class="section-desc" style="margin: 0 auto; text-align: center;" data-i18n="contact_desc">Yeni projeler,
+                işbirlikleri veya sadece
+                tanışmak için bana aşağıdaki kanallardan
+                ulaşabilirsiniz.</p>
+
+            <div class="grid grid-3" style="margin-top: 3rem;">
+                <a href="mailto:berkayyucl@gmail.com" class="glass-card"
+                    style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-decoration: none; color: inherit;">
+                    <div class="card-icon" style="font-size: 2.5rem; color: var(--accent-primary);"><i
+                            class="fa-solid fa-envelope"></i></div>
+                    <h3 style="margin-top: 1rem;">E-Posta</h3>
+                    <p style="color: var(--text-secondary);">berkayyucl@gmail.com</p>
+                </a>
+                <a href="https://www.linkedin.com/in/berkay-yücel/" target="_blank" rel="noopener noreferrer"
+                    class="glass-card"
+                    style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-decoration: none; color: inherit;">
+                    <div class="card-icon" style="font-size: 2.5rem; color: #0077b5;"><i
+                            class="fa-brands fa-linkedin"></i></div>
+                    <h3 style="margin-top: 1rem;">LinkedIn</h3>
+                    <p style="color: var(--text-secondary);">profilimi incele</p>
+                </a>
+                <a href="tel:+905558988960" class="glass-card"
+                    style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-decoration: none; color: inherit;">
+                    <div class="card-icon" style="font-size: 2.5rem; color: #4ade80;"><i class="fa-solid fa-phone"></i>
+                    </div>
+                    <h3 style="margin-top: 1rem;">Telefon</h3>
+                    <p style="color: var(--text-secondary);">+90 555 898 89 60</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <script src="lang.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
