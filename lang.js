@@ -9,12 +9,9 @@ const dictionary = {
 
         // index.html - Hero
         hero_badge: "Game Designer & Product Manager",
-        hero_title_1: "Sadece kodlamayı değil,<br>ürünün ",
-        hero_title_highlight: "kullanıcıya ulaştığı mantığı",
-        hero_title_2: " tasarlıyorum.",
+        hero_title_main: "Dijital ürünler ve oyunlar geliştiriyorum.",
         hero_subtitle: "Marmara Üniversitesi Matematik bölümü öğrencisi ve bağımsız bir geliştirici olarak; analitik düşünce yapımı veri optimizasyonu (Google Analytics, A/B Testing) tecrübelerimle birleştirerek, estetikten ödün vermeyen ve tamamen kullanıcı odaklı ürünler tasarlıyorum.",
         hero_btn_projects: "Projelerimi İncele",
-        hero_btn_process: "Sürecim Nasıl İşler?",
 
         // index.html - Education
         edu_title: "Eğitim & Deneyim",
@@ -115,12 +112,9 @@ const dictionary = {
 
         // index.html - Hero
         hero_badge: "Game Designer & Product Manager",
-        hero_title_1: "I don't just write code,<br>I design the ",
-        hero_title_highlight: "user logic behind the product",
-        hero_title_2: ".",
+        hero_title_main: "I develop digital products and games.",
         hero_subtitle: "As a Mathematics student at Marmara University and an independent developer; I design entirely user-centric products without compromising aesthetics by combining my analytical mindset with my data optimization (Google Analytics, A/B Testing) experience.",
         hero_btn_projects: "View My Projects",
-        hero_btn_process: "How I Work?",
 
         // index.html - Education
         edu_title: "Education & Experience",
