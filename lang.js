@@ -12,14 +12,14 @@ const dictionary = {
         hero_title_1: "Sadece kodlamayı değil,<br>ürünün ",
         hero_title_highlight: "kullanıcıya ulaştığı mantığı",
         hero_title_2: " tasarlıyorum.",
-        hero_subtitle: "Marmara Üniversitesi Matematik bölümü öğrencisi ve bağımsız bir geliştirici (Solo Dev) olarak; analitik düşünce yapımı veri optimizasyonu (Google Analytics, A/B Testing) tecrübelerimle birleştirerek, estetikten ödün vermeyen ve tamamen kullanıcı odaklı ürünler tasarlıyorum.",
+        hero_subtitle: "Marmara Üniversitesi Matematik bölümü öğrencisi ve bağımsız bir geliştirici olarak; analitik düşünce yapımı veri optimizasyonu (Google Analytics, A/B Testing) tecrübelerimle birleştirerek, estetikten ödün vermeyen ve tamamen kullanıcı odaklı ürünler tasarlıyorum.",
         hero_btn_projects: "Projelerimi İncele",
         hero_btn_process: "Sürecim Nasıl İşler?",
 
         // index.html - Education
         edu_title: "Eğitim & Deneyim",
         edu_desc: "Kariyer yolculuğumda veri analitiği ile oyun ve ürün geliştirme disiplinlerini birleştirme fırsatı bulduğum ana duraklar:",
-        edu_1_title: "Bağımsız Geliştirici (Solo Dev)",
+        edu_1_title: "Bağımsız Geliştirici",
         edu_1_date: "Aktif",
         edu_1_body: "<strong>Game & Web Developer:</strong> Farklı disiplinleri (Yazılım, Tasarım, Ürün Yönetimi) tek bir potada eriterek kendi oyunlarımı ve web projelerimi uçtan uca hayata geçiriyorum.",
         edu_2_title: "Sempeak",
@@ -118,14 +118,14 @@ const dictionary = {
         hero_title_1: "I don't just write code,<br>I design the ",
         hero_title_highlight: "user logic behind the product",
         hero_title_2: ".",
-        hero_subtitle: "As a Mathematics student at Marmara University and an independent Solo Dev; I design entirely user-centric products without compromising aesthetics by combining my analytical mindset with my data optimization (Google Analytics, A/B Testing) experience.",
+        hero_subtitle: "As a Mathematics student at Marmara University and an independent developer; I design entirely user-centric products without compromising aesthetics by combining my analytical mindset with my data optimization (Google Analytics, A/B Testing) experience.",
         hero_btn_projects: "View My Projects",
         hero_btn_process: "How I Work?",
 
         // index.html - Education
         edu_title: "Education & Experience",
         edu_desc: "The main milestones in my career journey where I had the opportunity to combine data analytics with game and product development disciplines:",
-        edu_1_title: "Independent Developer (Solo Dev)",
+        edu_1_title: "Independent Developer",
         edu_1_date: "Active",
         edu_1_body: "<strong>Game & Web Developer:</strong> By melting different disciplines (Software, Design, Product Management) into a single pot, I bring my own games and web projects to life entirely end-to-end.",
         edu_2_title: "Sempeak",
