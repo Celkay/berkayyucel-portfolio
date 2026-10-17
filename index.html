@@ -4,11 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolyo | Product Manager & Game Designer</title>
+    <title>Berkay Yücel | Game Designer & Product Manager</title>
+    <meta name="description"
+        content="Berkay Yücel: oyun tasarımcısı ve ürün geliştirici. itch.io'da yayında olan oyunlar, SaaS ürünleri ve veri analitiği deneyimi.">
+    <meta property="og:title" content="Berkay Yücel | Game Designer & Product Manager">
+    <meta property="og:description" content="Oyunlar, SaaS ürünleri ve veri analitiği.">
+    <meta property="og:image" content="https://celkay.github.io/berkayyucel-portfolio/assets/games/ancient-lords/banner.webp">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;900&family=Inter:wght@400;500;600&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;800;900&family=Inter:wght@400;500;600&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <!-- FontAwesome for Icons -->
@@ -24,211 +29,222 @@
 
     <nav class="navbar">
         <div class="nav-container">
-            <div class="logo">
+            <a href="index.html" class="logo">
                 <span class="logo-text">BY<span class="highlight">.</span></span>
-            </div>
-            <ul class="nav-links">
+            </a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#portals" data-i18n="portals_title">Portfolyom</a></li>
                 <li><a href="#yaklasim" data-i18n="nav_education">Eğitim & Deneyim</a></li>
                 <li><a href="#hizmetler" data-i18n="nav_services">Hizmetlerim</a></li>
                 <li><a href="games.html" data-i18n="nav_games">Oyunlar</a></li>
                 <li><a href="apps.html" data-i18n="nav_apps">Uygulamalar</a></li>
             </ul>
-            <div style="display: flex; gap: 1rem; align-items: center;">
+            <div class="nav-actions">
                 <a href="#" id="lang-toggle"
                     style="color: var(--text-primary); text-decoration: none; font-weight: 600; font-size: 0.9rem; padding: 0.5rem; transition: color 0.3s;"><i
                         class="fa-solid fa-globe"></i> EN</a>
                 <a href="#iletisim-bolumu" class="btn btn-primary btn-small" data-i18n="nav_contact">İletişime Geç</a>
+                <button class="nav-toggle" aria-label="Menü" aria-controls="nav-links" aria-expanded="false"><i
+                        class="fa-solid fa-bars"></i></button>
             </div>
         </div>
     </nav>
 
     <header class="hero">
-        <div class="container hero-content">
-            <div class="badge" data-i18n="hero_badge">Game Designer & Product Manager</div>
-            <h1 class="hero-title" data-i18n="hero_title_main">Dijital ürünler ve oyunlar geliştiriyorum.</h1>
-            <p class="hero-subtitle" data-i18n="hero_subtitle">Marmara Üniversitesi Matematik bölümü öğrencisi ve
-                bağımsız bir geliştirici olarak; analitik düşünce yapımı veri optimizasyonu (Google
-                Analytics, A/B Testing) tecrübelerimle birleştirerek, estetikten ödün vermeyen ve tamamen kullanıcı
-                odaklı ürünler tasarlıyorum.</p>
-            <div class="hero-actions" style="gap: 1.5rem; justify-content: flex-start;">
-                <a href="#portals" class="btn btn-primary"
-                    style="background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));"><span
-                        data-i18n="hero_btn_projects">Projelerimi İncele</span> <i
-                        class="fa-solid fa-arrow-down"></i></a>
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <div class="badge" lang="en" data-i18n="hero_badge">Game Designer & Product Manager</div>
+                <h1 class="hero-title" data-i18n="hero_title_main">Dijital ürünler ve oyunlar geliştiriyorum.</h1>
+                <p class="hero-subtitle" data-i18n="hero_subtitle">Marmara Üniversitesi Matematik bölümü öğrencisi ve
+                    bağımsız bir geliştirici olarak; analitik düşünce yapımı veri optimizasyonu (Google
+                    Analytics, A/B Testing) tecrübelerimle birleştirerek, estetikten ödün vermeyen ve tamamen kullanıcı
+                    odaklı ürünler tasarlıyorum.</p>
+                <div class="hero-actions">
+                    <a href="#portals" class="btn btn-primary"><span data-i18n="hero_btn_projects">Projelerimi
+                            İncele</span> <i class="fa-solid fa-arrow-down"></i></a>
+                    <a href="#iletisim-bolumu" class="btn btn-secondary"><span data-i18n="nav_contact">İletişime
+                            Geç</span></a>
+                </div>
+                <div class="hero-stats">
+                    <div class="hero-stat"><strong>5</strong><span data-i18n="stat_games">itch.io'da yayında oyun</span>
+                    </div>
+                    <div class="hero-stat"><strong>2</strong><span data-i18n="stat_apps">SaaS ürünü</span></div>
+                    <div class="hero-stat"><strong>1+</strong><span data-i18n="stat_cro">yıl CRO ve veri analitiği</span>
+                    </div>
+                </div>
             </div>
+
+            <a href="games.html" class="cover-stack" aria-label="Oyunlar">
+                <img src="assets/games/shadow-throne/cover.webp" alt="Shadow Throne" width="630" height="500">
+                <img src="assets/games/dungeon-raider/cover.webp" alt="Dungeon Raider" width="630" height="500">
+                <img src="assets/games/ancient-lords/cover.webp" alt="Ancient Lords" width="630" height="500">
+                <span class="cover-pill"><i class="fa-brands fa-itch-io"></i> <span data-i18n="cover_pill">Tarayıcıda
+                        oyna</span></span>
+            </a>
         </div>
     </header>
 
-    <section id="yaklasim" class="section">
+    <section id="portals" class="section">
         <div class="container">
+            <span class="section-eyebrow" data-i18n="eyebrow_work">Çalışmalar</span>
+            <h2 class="section-title" data-i18n="portals_title">Portfolyom</h2>
+            <p class="section-desc" data-i18n="portals_desc">Geliştirdiğim projeleri, hedefledikleri sektöre ve tasarım
+                felsefelerine göre iki farklı başlık altında inceleyebilirsiniz.</p>
+
+            <div class="grid grid-2">
+
+                <!-- Games Portal -->
+                <a href="games.html" class="portal-card games-portal">
+                    <div class="glass-card">
+                        <div class="portal-media covers">
+                            <img src="assets/games/ancient-lords/cover.webp" alt="Ancient Lords" loading="lazy">
+                            <img src="assets/games/shadow-throne/cover.webp" alt="Shadow Throne" loading="lazy">
+                        </div>
+                        <div class="portal-body">
+                            <h3 data-i18n="portal_games_title">Oyun Tasarımlarım</h3>
+                            <p data-i18n="portal_games_desc">Ancient Lords, Dungeon Raider, Shadow Throne, Philosopher's
+                                Stone ve 3rd Dimension. itch.io'da yayında olan, çoğu tarayıcıda oynanan oyunlarım.</p>
+                            <div class="portal-link"><span data-i18n="portal_games_btn">Oyunları Keşfet</span> <i
+                                    class="fa-solid fa-arrow-right"></i></div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Apps Portal -->
+                <a href="apps.html" class="portal-card apps-portal">
+                    <div class="glass-card">
+                        <div class="portal-media">
+                            <img src="assets/mathquest_map.webp" alt="MathQuest" loading="lazy">
+                        </div>
+                        <div class="portal-body">
+                            <h3 data-i18n="portal_apps_title">SaaS & Ürün Uygulamaları</h3>
+                            <p data-i18n="portal_apps_desc">EduQuest gibi modern ihtiyaçlara yönelik kurgulanmış, veri
+                                odaklı analitik projelerim ve kullanıcı deneyimi (UX) çalışmalarım.</p>
+                            <div class="portal-link"><span data-i18n="portal_apps_btn">Uygulamaları İncele</span> <i
+                                    class="fa-solid fa-arrow-right"></i></div>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="yaklasim" class="section dark-section">
+        <div class="container">
+            <span class="section-eyebrow" data-i18n="eyebrow_journey">Yolculuk</span>
             <h2 class="section-title" data-i18n="edu_title">Eğitim & Deneyim</h2>
             <p class="section-desc" data-i18n="edu_desc">Kariyer yolculuğumda veri analitiği ile oyun ve ürün geliştirme
-                disiplinlerini
-                birleştirme fırsatı bulduğum ana duraklar:</p>
+                disiplinlerini birleştirme fırsatı bulduğum ana duraklar:</p>
 
-            <div class="grid grid-3">
-                <div class="glass-card flex-col">
+            <div class="timeline">
+                <div class="glass-card timeline-item">
                     <div class="card-icon"><i class="fa-solid fa-code"></i></div>
-                    <h3 data-i18n="edu_1_title">Bağımsız Geliştirici</h3>
-                    <span style="color:var(--accent-primary); font-size:0.9rem; margin-top:-0.5rem;"
-                        data-i18n="edu_1_date">Aktif</span>
+                    <div class="timeline-head">
+                        <h3 data-i18n="edu_1_title">Bağımsız Geliştirici</h3>
+                        <span class="timeline-date" data-i18n="edu_1_date">Aktif</span>
+                    </div>
                     <p data-i18n="edu_1_body"><strong>Game & Web Developer:</strong> Farklı disiplinleri (Yazılım,
-                        Tasarım, Ürün Yönetimi) tek
-                        bir potada eriterek kendi oyunlarımı ve web projelerimi uçtan uca hayata geçiriyorum.</p>
+                        Tasarım, Ürün Yönetimi) tek bir potada eriterek kendi oyunlarımı ve web projelerimi uçtan uca
+                        hayata geçiriyorum.</p>
                 </div>
-                <div class="glass-card flex-col">
+                <div class="glass-card timeline-item">
                     <div class="card-icon"><i class="fa-solid fa-chart-line"></i></div>
-                    <h3 data-i18n="edu_2_title">Sempeak</h3>
-                    <span style="color:var(--accent-primary); font-size:0.9rem; margin-top:-0.5rem;"
-                        data-i18n="edu_2_date">Eylül 2023 -
-                        Ekim 2024</span>
+                    <div class="timeline-head">
+                        <h3 data-i18n="edu_2_title">Sempeak</h3>
+                        <span class="timeline-date" data-i18n="edu_2_date">Eylül 2023 - Ekim 2024</span>
+                    </div>
                     <p data-i18n="edu_2_body"><strong>CRO Intern:</strong> Gratis, Sportive ve Tatil.com gibi kurumsal
-                        müşteriler için
-                        Google Analytics 4, Hotjar ve GTM kullanarak veri analizi, A/B testleri kurgulama ve stratejik
-                        raporlamalar gerçekleştirdim.</p>
+                        müşteriler için Google Analytics 4, Hotjar ve GTM kullanarak veri analizi, A/B testleri kurgulama
+                        ve stratejik raporlamalar gerçekleştirdim.</p>
                 </div>
-                <div class="glass-card flex-col">
+                <div class="glass-card timeline-item">
                     <div class="card-icon"><i class="fa-solid fa-graduation-cap"></i></div>
-                    <h3 data-i18n="edu_3_title">Marmara Üniversitesi</h3>
-                    <span style="color:var(--accent-primary); font-size:0.9rem; margin-top:-0.5rem;"
-                        data-i18n="edu_3_date">2020 - Devam
-                        Ediyor</span>
+                    <div class="timeline-head">
+                        <h3 data-i18n="edu_3_title">Marmara Üniversitesi</h3>
+                        <span class="timeline-date" data-i18n="edu_3_date">2020 - Devam Ediyor</span>
+                    </div>
                     <p data-i18n="edu_3_body"><strong>Matematik (Lisans):</strong> Analitik düşünme, algoritma mantığı
-                        ve problem çözme
-                        yeteneklerimin temelini oluşturan akademik eğitimime devam ediyorum.</p>
+                        ve problem çözme yeteneklerimin temelini oluşturan akademik eğitimime devam ediyorum.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    </div>
-    </section>
-
-    <section id="hizmetler" class="section dark-section">
+    <section id="hizmetler" class="section">
         <div class="container">
+            <span class="section-eyebrow" data-i18n="eyebrow_services">Hizmetler</span>
             <h2 class="section-title" data-i18n="services_title">Neler Yapabilirim?</h2>
             <p class="section-desc" data-i18n="services_desc">Farklı uzmanlık alanlarını bir araya getirerek, bir fikrin
-                tasarımdan koda kadar
-                olan yolculuğunda sunduğum hizmetler:</p>
+                tasarımdan koda kadar olan yolculuğunda sunduğum hizmetler:</p>
 
-            <div class="grid grid-3" style="margin-top: 3rem;">
+            <div class="grid grid-3">
                 <div class="glass-card flex-col">
                     <div class="card-icon"><i class="fa-solid fa-gamepad"></i></div>
                     <h3 data-i18n="svc_1_title">Oyun & Mekanik Tasarımı</h3>
                     <p data-i18n="svc_1_body">Oyun ve mekanik kurgusu, hikaye (narrative) tasarımı, oyun içi ekonomi
-                        dengesi ve bölüm tasarımı
-                        (level design) süreçlerinde aktif rol alıyorum.</p>
+                        dengesi ve bölüm tasarımı (level design) süreçlerinde aktif rol alıyorum.</p>
                 </div>
                 <div class="glass-card flex-col">
                     <div class="card-icon"><i class="fa-solid fa-laptop-code"></i></div>
                     <h3 data-i18n="svc_2_title">Web & Grafik Tasarımı</h3>
-                    <p data-i18n="svc_2_body">Kullanıcı odaklı modern web arayüzlerinin yanı sıra, kafe ve restoranlar
-                        için dijital/katalog
-                        menü tasarımları yapıyor; vizyonunuzu estetik ve işlevsel kreatif ürünlere dönüştürüyorum.</p>
+                    <p data-i18n="svc_2_body">Kurumsal web siteleri, etkileşimli portfolyolar, açılış sayfaları ve dijital
+                        kafe/restoran menü tasarımlarını (UI/UX) modern teknolojilerle (HTML/CSS/JS) kodluyorum.</p>
                 </div>
                 <div class="glass-card flex-col">
                     <div class="card-icon"><i class="fa-solid fa-rocket"></i></div>
                     <h3 data-i18n="svc_3_title">SaaS & Uygulama Demoları</h3>
                     <p data-i18n="svc_3_body">Bulut tabanlı yazılım vizyonlarını hayata geçirmek için etkileşimli ürün
-                        demoları, veriye dayalı
-                        yazılım mimarileri ve kullanıcı akışları geliştiriyorum.</p>
+                        demoları, veriye dayalı yazılım mimarileri ve kullanıcı akışları geliştiriyorum.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="portals" class="section">
-        <div class="container">
-            <h2 class="section-title" data-i18n="portals_title">Portfolyom</h2>
-            <p class="section-desc" data-i18n="portals_desc">Geliştirdiğim projeleri, hedefledikleri sektöre ve tasarım
-                felsefelerine göre iki
-                farklı başlık altında inceleyebilirsiniz.</p>
-
-            <div class="grid grid-2" style="margin-top: 3rem;">
-
-                <!-- Games Portal -->
-                <a href="games.html" class="portal-card games-portal"
-                    style="text-decoration: none; color: inherit; display: block;">
-                    <div class="glass-card"
-                        style="height: 100%; transition: transform 0.3s ease, border-color 0.3s ease; border: 2px solid transparent;">
-                        <div class="card-icon" style="background: rgba(168,85,247,0.1); color: #a855f7;"><i
-                                class="fa-solid fa-dragon"></i></div>
-                        <h3 style="margin-bottom: 1rem; font-size: 1.8rem;" data-i18n="portal_games_title">Oyun
-                            Tasarımlarım</h3>
-                        <p style="color: var(--text-secondary); line-height: 1.6;" data-i18n="portal_games_desc">Ancient Lords, Dungeon
-                            Raider, Shadow Throne, Philosopher's Stone ve 3rd Dimension. itch.io'da yayında olan, çoğu
-                            tarayıcıda oynanan oyunlarım.</p>
-                        <div style="margin-top: 2rem; color: #a855f7; font-weight: 600;"><span
-                                data-i18n="portal_games_btn">Oyunları Keşfet</span> <i
-                                class="fa-solid fa-arrow-right"></i></div>
-                    </div>
-                </a>
-
-                <!-- Apps Portal -->
-                <a href="apps.html" class="portal-card apps-portal"
-                    style="text-decoration: none; color: inherit; display: block;">
-                    <div class="glass-card"
-                        style="height: 100%; transition: transform 0.3s ease, border-color 0.3s ease; border: 2px solid transparent;">
-                        <div class="card-icon" style="background: rgba(59,130,246,0.1); color: #3b82f6;"><i
-                                class="fa-solid fa-layer-group"></i></div>
-                        <h3 style="margin-bottom: 1rem; font-size: 1.8rem;" data-i18n="portal_apps_title">SaaS & Ürün
-                            Uygulamaları</h3>
-                        <p style="color: var(--text-secondary); line-height: 1.6;" data-i18n="portal_apps_desc">EduQuest
-                            gibi modern
-                            ihtiyaçlara yönelik kurgulanmış, veri odaklı analitik projelerim ve kullanıcı deneyimi (UX)
-                            çalışmalarım.</p>
-                        <div style="margin-top: 2rem; color: #3b82f6; font-weight: 600;"><span
-                                data-i18n="portal_apps_btn">Uygulamaları İncele</span> <i
-                                class="fa-solid fa-arrow-right"></i></div>
-                    </div>
-                </a>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Lightbox Modal -->
-    <div id="lightbox" class="lightbox">
-        <span class="lightbox-close">&times;</span>
-        <button class="lightbox-prev"><i class="fa-solid fa-chevron-left"></i></button>
-        <img class="lightbox-content" id="lightbox-img">
-        <button class="lightbox-next"><i class="fa-solid fa-chevron-right"></i></button>
-    </div>
-
     <section id="iletisim-bolumu" class="section dark-section">
         <div class="container" style="text-align: center;">
+            <span class="section-eyebrow" data-i18n="eyebrow_contact">İletişim</span>
             <h2 class="section-title" data-i18n="contact_title">İletişime Geçin</h2>
-            <p class="section-desc" style="margin: 0 auto; text-align: center;" data-i18n="contact_desc">Yeni projeler,
-                işbirlikleri veya sadece
-                tanışmak için bana aşağıdaki kanallardan
-                ulaşabilirsiniz.</p>
+            <p class="section-desc" style="margin: 0 auto 3rem; text-align: center;" data-i18n="contact_desc">Yeni
+                projeler, işbirlikleri veya sadece tanışmak için bana aşağıdaki kanallardan ulaşabilirsiniz.</p>
 
-            <div class="grid grid-3" style="margin-top: 3rem;">
-                <a href="mailto:berkayyucl@gmail.com" class="glass-card"
-                    style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-decoration: none; color: inherit; text-align: center;">
-                    <div class="card-icon" style="font-size: 2.5rem; color: var(--accent-primary);"><i
-                            class="fa-solid fa-envelope"></i></div>
-                    <h3 style="margin-top: 1rem;">E-Posta</h3>
-                    <p style="color: var(--text-secondary);">berkayyucl@gmail.com</p>
+            <div class="grid grid-3">
+                <a href="mailto:berkayyucl@gmail.com" class="glass-card contact-card">
+                    <div class="card-icon"><i class="fa-solid fa-envelope"></i></div>
+                    <h3>E-Posta</h3>
+                    <p>berkayyucl@gmail.com</p>
                 </a>
                 <a href="https://www.linkedin.com/in/berkay-yücel/" target="_blank" rel="noopener noreferrer"
-                    class="glass-card"
-                    style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-decoration: none; color: inherit; text-align: center;">
-                    <div class="card-icon" style="font-size: 2.5rem; color: #0077b5;"><i
-                            class="fa-brands fa-linkedin"></i></div>
-                    <h3 style="margin-top: 1rem;">LinkedIn</h3>
-                    <p style="color: var(--text-secondary);">profilimi incele</p>
+                    class="glass-card contact-card">
+                    <div class="card-icon" style="color: #0a8fd8;"><i class="fa-brands fa-linkedin"></i></div>
+                    <h3>LinkedIn</h3>
+                    <p data-i18n="contact_linkedin">profilimi incele</p>
                 </a>
-                <a href="tel:+905558988960" class="glass-card"
-                    style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-decoration: none; color: inherit; text-align: center;">
-                    <div class="card-icon" style="font-size: 2.5rem; color: #4ade80;"><i class="fa-solid fa-phone"></i>
-                    </div>
-                    <h3 style="margin-top: 1rem;">Telefon</h3>
-                    <p style="color: var(--text-secondary);">+90 555 898 89 60</p>
+                <a href="tel:+905558988960" class="glass-card contact-card">
+                    <div class="card-icon" style="color: #4ade80;"><i class="fa-solid fa-phone"></i></div>
+                    <h3 data-i18n="contact_phone">Telefon</h3>
+                    <p>+90 555 898 89 60</p>
                 </a>
             </div>
         </div>
     </section>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <div class="footer-left">
+                <p>© 2026 Berkay Yücel</p>
+            </div>
+            <div class="footer-right">
+                <a href="https://celkay.itch.io" target="_blank" rel="noopener noreferrer" aria-label="itch.io"><i
+                        class="fa-brands fa-itch-io"></i></a>
+                <a href="https://www.linkedin.com/in/berkay-yücel/" target="_blank" rel="noopener noreferrer"
+                    aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/celkay" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i
+                        class="fa-brands fa-github"></i></a>
+                <a href="mailto:berkayyucl@gmail.com" aria-label="E-Posta"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
 
     <script src="lang.js"></script>
     <script src="script.js"></script>

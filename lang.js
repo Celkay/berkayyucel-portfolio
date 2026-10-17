@@ -1,5 +1,18 @@
 const dictionary = {
     tr: {
+
+        // Home v2
+        stat_games: "itch.io'da yayında oyun",
+        stat_apps: "SaaS ürünü",
+        stat_cro: "yıl CRO ve veri analitiği",
+        cover_pill: "Tarayıcıda oyna",
+        eyebrow_work: "Çalışmalar",
+        eyebrow_journey: "Yolculuk",
+        eyebrow_services: "Hizmetler",
+        eyebrow_contact: "İletişim",
+        contact_linkedin: "profilimi incele",
+        contact_phone: "Telefon",
+        games_index_title: "Oyun Dizini",
         // Navbar
         nav_education: "Eğitim & Deneyim",
         nav_services: "Hizmetlerim",
@@ -174,6 +187,19 @@ const dictionary = {
         ps_t3: "<strong>Kurulumsuz:</strong> Zip açılıp exe çalıştırılır; arkadaşlarla internetten Radmin VPN üzerinden oynanır."
     },
     en: {
+
+        // Home v2
+        stat_games: "games live on itch.io",
+        stat_apps: "SaaS products",
+        stat_cro: "yr of CRO & data analytics",
+        cover_pill: "Play in browser",
+        eyebrow_work: "Work",
+        eyebrow_journey: "Journey",
+        eyebrow_services: "Services",
+        eyebrow_contact: "Contact",
+        contact_linkedin: "view my profile",
+        contact_phone: "Phone",
+        games_index_title: "Game Index",
         // Navbar
         nav_education: "Education & Experience",
         nav_services: "Services",

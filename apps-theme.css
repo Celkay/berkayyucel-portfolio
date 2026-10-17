@@ -28,6 +28,8 @@
     /* Typography: Extremely legible, modern geometric sans-serif */
     --font-heading: 'Plus Jakarta Sans', sans-serif;
     --font-body: 'Plus Jakarta Sans', sans-serif;
+
+    --nav-bg: rgba(15, 23, 42, 0.78);
 }
 
 body {

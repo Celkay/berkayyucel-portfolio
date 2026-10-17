@@ -25,42 +25,52 @@
 
     <nav class="navbar">
         <div class="nav-container">
-            <div class="logo">
+            <a href="index.html" class="logo">
                 <span class="logo-text">BY<span class="highlight">.</span></span>
-            </div>
-            <ul class="nav-links">
+            </a>
+            <ul class="nav-links" id="nav-links">
                 <li><a href="index.html" data-i18n="games_nav_home">Ana Sayfa</a></li>
+                <li><a href="games.html" data-i18n="nav_games">Oyunlar</a></li>
                 <li><a href="apps.html" data-i18n="nav_apps">Uygulamalar</a></li>
-                <li><a href="https://celkay.itch.io" target="_blank" rel="noopener noreferrer">itch.io</a></li>
+                <li><a href="https://celkay.itch.io" target="_blank" rel="noopener noreferrer">itch.io <i
+                            class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.7em;"></i></a></li>
             </ul>
-            <div style="display: flex; gap: 1rem; align-items: center;">
+            <div class="nav-actions">
                 <a href="#" id="lang-toggle"
                     style="color: var(--text-primary); text-decoration: none; font-weight: 600; font-size: 0.9rem; padding: 0.5rem; transition: color 0.3s;"><i
                         class="fa-solid fa-globe"></i> EN</a>
                 <a href="#iletisim-bolumu" class="btn btn-primary btn-small" data-i18n="nav_contact">İletişime Geç</a>
+                <button class="nav-toggle" aria-label="Menü" aria-controls="nav-links" aria-expanded="false"><i
+                        class="fa-solid fa-bars"></i></button>
             </div>
         </div>
     </nav>
 
-    <header class="hero"
-        style="padding: 100px 0 50px 0; text-align: center; border-bottom: 1px solid rgba(255,255,255,0.05);">
-        <div class="container hero-content" style="max-width: 800px; margin: 0 auto; padding-top: 2rem;">
-            <div class="badge" style="margin: 0 auto 1.5rem auto;" data-i18n="games_hero_badge">Oyun & Mekanik Tasarımı
+    <header class="page-hero">
+        <div class="container hero-content">
+            <div class="badge" data-i18n="games_hero_badge">Oyun & Mekanik Tasarımı
             </div>
-            <h1 class="hero-title" style="font-size: 3rem;" data-i18n="games_hero_title_1">Hikayeler ve <span
+            <h1 class="hero-title" data-i18n="games_hero_title_1">Hikayeler ve <span
                     class="highlight-gradient">Mekanikler</span></h1>
-            <p class="hero-subtitle" style="font-size: 1.1rem; max-width: 600px; margin: 0 auto 2rem auto;"
+            <p class="hero-subtitle"
                 data-i18n="games_hero_subtitle">Tasarladığım ve tek başıma geliştirdiğim oyunlar. Çoğu doğrudan tarayıcıda oynanıyor.</p>
             <a href="https://celkay.itch.io" target="_blank" rel="noopener noreferrer" class="btn btn-primary"><i
                     class="fa-brands fa-itch-io"></i> <span data-i18n="games_hero_btn">itch.io Sayfam</span></a>
         </div>
+        <nav class="game-index" aria-label="Oyun Dizini">
+            <a href="#ancient-lords"><img src="assets/games/ancient-lords/cover.webp" alt="Ancient Lords" width="630" height="500"><span>Ancient Lords</span></a>
+            <a href="#dungeon-raider"><img src="assets/games/dungeon-raider/cover.webp" alt="Dungeon Raider" width="630" height="500"><span>Dungeon Raider</span></a>
+            <a href="#shadow-throne"><img src="assets/games/shadow-throne/cover.webp" alt="Shadow Throne" width="630" height="500"><span>Shadow Throne</span></a>
+            <a href="#philosophers-stone"><img src="assets/games/philosophers-stone/cover.webp" alt="Philosopher's Stone" width="630" height="500"><span>Philosopher's Stone</span></a>
+            <a href="#3rd-dimension"><img src="assets/games/3rd-dimension/cover.webp" alt="3rd Dimension" width="630" height="500"><span>3rd Dimension</span></a>
+        </nav>
     </header>
     <section id="gizli-projeler" class="section dark-section">
         <div class="container">
             <h2 class="section-title" data-i18n="games_section_title">itch.io'daki Oyunlarım</h2>
             <p class="section-desc" data-i18n="games_section_desc">Tasarımını, sistemlerini ve kodunu baştan sona kendim yaptığım, itch.io'da yayında olan oyunlarım.</p>
 
-            <div class="glass-card protected-card game-card">
+            <div class="glass-card protected-card game-card" id="ancient-lords">
                 <a href="https://celkay.itch.io/ancient-lords" target="_blank" rel="noopener noreferrer" class="game-banner">
                     <img src="assets/games/ancient-lords/banner.webp" alt="Ancient Lords">
                 </a>
@@ -112,7 +122,7 @@
                 </div>
             </div>
 
-            <div class="glass-card protected-card game-card">
+            <div class="glass-card protected-card game-card" id="dungeon-raider">
                 <a href="https://celkay.itch.io/dungeon-raider" target="_blank" rel="noopener noreferrer" class="game-banner">
                     <img src="assets/games/dungeon-raider/banner.webp" alt="Dungeon Raider">
                 </a>
@@ -163,7 +173,7 @@
                 </div>
             </div>
 
-            <div class="glass-card protected-card game-card">
+            <div class="glass-card protected-card game-card" id="shadow-throne">
                 <a href="https://celkay.itch.io/shadow-throne" target="_blank" rel="noopener noreferrer" class="game-banner">
                     <img src="assets/games/shadow-throne/banner.webp" alt="Shadow Throne">
                 </a>
@@ -215,7 +225,7 @@
                 </div>
             </div>
 
-            <div class="glass-card protected-card game-card">
+            <div class="glass-card protected-card game-card" id="philosophers-stone">
                 <a href="https://celkay.itch.io/philosophers-stone" target="_blank" rel="noopener noreferrer" class="game-banner">
                     <img src="assets/games/philosophers-stone/banner.webp" alt="Philosopher's Stone">
                 </a>
@@ -266,7 +276,7 @@
                 </div>
             </div>
 
-            <div class="glass-card protected-card game-card">
+            <div class="glass-card protected-card game-card" id="3rd-dimension">
                 <a href="https://celkay.itch.io/3rd-dimension" target="_blank" rel="noopener noreferrer" class="game-banner">
                     <img src="assets/games/3rd-dimension/banner.webp" alt="3rd Dimension">
                 </a>
@@ -551,37 +561,51 @@
     <section id="iletisim-bolumu" class="section dark-section">
         <div class="container" style="text-align: center;">
             <h2 class="section-title" data-i18n="contact_title">İletişime Geçin</h2>
-            <p class="section-desc" style="margin: 0 auto; text-align: center;" data-i18n="contact_desc">Yeni projeler,
+            <p class="section-desc" style="margin: 0 auto 3rem; text-align: center;" data-i18n="contact_desc">Yeni projeler,
                 işbirlikleri veya sadece
                 tanışmak için bana aşağıdaki kanallardan
                 ulaşabilirsiniz.</p>
 
-            <div class="grid grid-3" style="margin-top: 3rem;">
-                <a href="mailto:berkayyucl@gmail.com" class="glass-card"
-                    style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-decoration: none; color: inherit;">
-                    <div class="card-icon" style="font-size: 2.5rem; color: var(--accent-primary);"><i
+            <div class="grid grid-3">
+                <a href="mailto:berkayyucl@gmail.com" class="glass-card contact-card">
+                    <div class="card-icon" ><i
                             class="fa-solid fa-envelope"></i></div>
-                    <h3 style="margin-top: 1rem;">E-Posta</h3>
-                    <p style="color: var(--text-secondary);">berkayyucl@gmail.com</p>
+                    <h3>E-Posta</h3>
+                    <p>berkayyucl@gmail.com</p>
                 </a>
                 <a href="https://www.linkedin.com/in/berkay-yücel/" target="_blank" rel="noopener noreferrer"
-                    class="glass-card"
-                    style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-decoration: none; color: inherit;">
-                    <div class="card-icon" style="font-size: 2.5rem; color: #0077b5;"><i
+                    class="glass-card contact-card">
+                    <div class="card-icon" style="color: #0a8fd8;"><i
                             class="fa-brands fa-linkedin"></i></div>
-                    <h3 style="margin-top: 1rem;">LinkedIn</h3>
-                    <p style="color: var(--text-secondary);">profilimi incele</p>
+                    <h3>LinkedIn</h3>
+                    <p data-i18n="contact_linkedin">profilimi incele</p>
                 </a>
-                <a href="tel:+905558988960" class="glass-card"
-                    style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-decoration: none; color: inherit;">
-                    <div class="card-icon" style="font-size: 2.5rem; color: #4ade80;"><i class="fa-solid fa-phone"></i>
+                <a href="tel:+905558988960" class="glass-card contact-card">
+                    <div class="card-icon" style="color: #4ade80;"><i class="fa-solid fa-phone"></i>
                     </div>
-                    <h3 style="margin-top: 1rem;">Telefon</h3>
-                    <p style="color: var(--text-secondary);">+90 555 898 89 60</p>
+                    <h3 data-i18n="contact_phone">Telefon</h3>
+                    <p>+90 555 898 89 60</p>
                 </a>
             </div>
         </div>
     </section>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <div class="footer-left">
+                <p>© 2026 Berkay Yücel</p>
+            </div>
+            <div class="footer-right">
+                <a href="https://celkay.itch.io" target="_blank" rel="noopener noreferrer" aria-label="itch.io"><i
+                        class="fa-brands fa-itch-io"></i></a>
+                <a href="https://www.linkedin.com/in/berkay-yücel/" target="_blank" rel="noopener noreferrer"
+                    aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/celkay" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i
+                        class="fa-brands fa-github"></i></a>
+                <a href="mailto:berkayyucl@gmail.com" aria-label="E-Posta"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
 
     <script src="lang.js"></script>
     <script src="script.js"></script>

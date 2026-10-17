@@ -29,6 +29,8 @@
     /* Fonts: Cinzel for headers (BG3/Fantasy feel), Lora for reading text like a book */
     --font-heading: 'Cinzel', serif;
     --font-body: 'Lora', serif;
+
+    --nav-bg: rgba(17, 14, 12, 0.78);
 }
 
 body {
@@ -100,12 +102,13 @@ body {
 /* itch.io game cards */
 .game-card {
     margin-bottom: 2rem;
+    scroll-margin-top: 90px;
     overflow: hidden;
 }
 
 .game-banner {
     display: block;
-    margin: -2rem -2rem 1.5rem -2rem;
+    margin: calc(-1 * var(--card-pad)) calc(-1 * var(--card-pad)) 1.5rem;
     border-bottom: 1px solid var(--border-glass);
 }
 

@@ -1,13 +1,25 @@
-// Navbar blur effect on scroll
+// Navbar shadow on scroll
+const navbar = document.querySelector('.navbar');
 window.addEventListener('scroll', () => {
-    const navbar = document.querySelector('.navbar');
-    if (window.scrollY > 50) {
-        navbar.style.background = 'rgba(10, 10, 15, 0.8)';
-        navbar.style.boxShadow = '0 4px 30px rgba(0, 0, 0, 0.5)';
-    } else {
-        navbar.style.background = 'transparent';
-        navbar.style.boxShadow = 'none';
-    }
+    navbar.style.boxShadow = window.scrollY > 50 ? '0 4px 30px rgba(0, 0, 0, 0.5)' : 'none';
+});
+
+// Mobile menu
+const navToggle = document.querySelector('.nav-toggle');
+if (navToggle) {
+    const setMenu = (open) => {
+        navbar.classList.toggle('menu-open', open);
+        navToggle.setAttribute('aria-expanded', open);
+        navToggle.innerHTML = open ? '<i class="fa-solid fa-xmark"></i>' : '<i class="fa-solid fa-bars"></i>';
+    };
+    navToggle.addEventListener('click', () => setMenu(!navbar.classList.contains('menu-open')));
+    document.querySelectorAll('.nav-links a').forEach(a => a.addEventListener('click', () => setMenu(false)));
+}
+
+// Mark the current page in the navbar
+const currentPage = location.pathname.split('/').pop() || 'index.html';
+document.querySelectorAll('.nav-links a').forEach(a => {
+    if (a.getAttribute('href') === currentPage) a.classList.add('active');
 });
 
 // Simple reveal animation for cards
