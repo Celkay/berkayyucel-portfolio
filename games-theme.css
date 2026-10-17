@@ -97,3 +97,37 @@ body {
 ::-webkit-scrollbar-thumb:hover {
     background: #d4af37;
 }
+/* itch.io game cards */
+.game-card {
+    margin-bottom: 2rem;
+    overflow: hidden;
+}
+
+.game-banner {
+    display: block;
+    margin: -2rem -2rem 1.5rem -2rem;
+    border-bottom: 1px solid var(--border-glass);
+}
+
+.game-banner img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1920 / 560;
+    object-fit: cover;
+    transition: filter 0.3s ease;
+}
+
+.game-banner:hover img {
+    filter: brightness(1.12);
+}
+
+.game-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.role {
+    color: #c9a77a;
+}

@@ -31,6 +31,7 @@
             <ul class="nav-links">
                 <li><a href="index.html" data-i18n="games_nav_home">Ana Sayfa</a></li>
                 <li><a href="apps.html" data-i18n="nav_apps">Uygulamalar</a></li>
+                <li><a href="https://celkay.itch.io" target="_blank" rel="noopener noreferrer">itch.io</a></li>
             </ul>
             <div style="display: flex; gap: 1rem; align-items: center;">
                 <a href="#" id="lang-toggle"
@@ -49,18 +50,226 @@
             <h1 class="hero-title" style="font-size: 3rem;" data-i18n="games_hero_title_1">Hikayeler ve <span
                     class="highlight-gradient">Mekanikler</span></h1>
             <p class="hero-subtitle" style="font-size: 1.1rem; max-width: 600px; margin: 0 auto 2rem auto;"
-                data-i18n="games_hero_subtitle">Tasarladığım
-                fantastik evrenler, prototiplediğim oyun döngüleri ve interaktif deneyimler.</p>
+                data-i18n="games_hero_subtitle">Tasarladığım ve tek başıma geliştirdiğim oyunlar. Çoğu doğrudan tarayıcıda oynanıyor.</p>
+            <a href="https://celkay.itch.io" target="_blank" rel="noopener noreferrer" class="btn btn-primary"><i
+                    class="fa-brands fa-itch-io"></i> <span data-i18n="games_hero_btn">itch.io Sayfam</span></a>
         </div>
     </header>
     <section id="gizli-projeler" class="section dark-section">
         <div class="container">
-            <h2 class="section-title" data-i18n="games_section_title">Öne Çıkan Oyun Projeleri</h2>
-            <p class="section-desc" data-i18n="games_section_desc">Solo bir geliştirici olarak mimarisini, sistem
-                tasarımını ve temel mekaniklerini
-                sıfırdan inşa ettiğim kapsamlı oyun projelerim.</p>
+            <h2 class="section-title" data-i18n="games_section_title">itch.io'daki Oyunlarım</h2>
+            <p class="section-desc" data-i18n="games_section_desc">Tasarımını, sistemlerini ve kodunu baştan sona kendim yaptığım, itch.io'da yayında olan oyunlarım.</p>
 
-            <div class="glass-card protected-card mb-5" style="margin-bottom: 2rem;">
+            <div class="glass-card protected-card game-card">
+                <a href="https://celkay.itch.io/ancient-lords" target="_blank" rel="noopener noreferrer" class="game-banner">
+                    <img src="assets/games/ancient-lords/banner.webp" alt="Ancient Lords">
+                </a>
+                <div class="protected-header">
+                    <div class="project-info">
+                        <h3><span class="highlight">"Ancient Lords"</span> - Monster Farming Strategy</h3>
+                        <span class="role" data-i18n="al_role">Rol: Solo Geliştirici | Platform: Tarayıcı (mobil, dikey) | Motor: Godot 4</span>
+                    </div>
+                    <div class="lock-icon"
+                        style="color: #4ade80; border-color: #4ade8033; background: #4ade801a;">
+                        <i class="fa-solid fa-seedling"></i>
+                        <span data-i18n="al_badge">Prototip · Tarayıcıda Oynanır</span>
+                    </div>
+                </div>
+                <div class="protected-body">
+                    <p><strong data-i18n="al_summary_title"><i class="fa-solid fa-play" style="color:var(--accent-primary);"></i> Proje Özeti:</strong><span data-i18n="al_summary"> Canavarları ekin gibi yetiştirip adanı kurduğun, sonra rakip lordların adalarına baskın yaptığın bir strateji oyunu.</span></p>
+
+                    <div class="grid grid-2 mt-4" style="gap: 1.5rem; align-items: start;">
+                        <div>
+                            <strong data-i18n="al_features_title"><i class="fa-solid fa-star" style="color:var(--accent-secondary);"></i> Oyun Döngüsü:</strong>
+                            <ul class="stats-list mt-2">
+                                <li data-i18n="al_f1"><strong>Yetiştirme:</strong> Mezar tarlasına tohum ekilir, iskelet aşama aşama topraktan çıkar. Sulama, çapalama ve tarlayı soymaya gelen hayaletler bakım katmanını oluşturur.</li>
+                                <li data-i18n="al_f2"><strong>Serbest yerleşim:</strong> Klasik çiftlik oyunlarındaki gibi ızgaralı bir ada. Ağıl, tarla, kule ve süsler taşınıp döndürülebilir; yer bitince büyücüler denizden yeni toprak çıkarır.</li>
+                                <li data-i18n="al_f3"><strong>Baskın:</strong> Birlikler düşman kıyısına çıkar, duvar, kule, mancınık ve tuzakların arasından yolunu kendi bulur.</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <strong data-i18n="al_tech_title"><i class="fa-solid fa-wrench" style="color:var(--accent-secondary);"></i> Tasarım ve Teknik Notlar:</strong>
+                            <ul class="stats-list mt-2">
+                                <li data-i18n="al_t1"><strong>Kalıcı kayıp:</strong> Baskında ölen canavar geri gelmez. Yetiştirme ile savaş aynı kaynağı paylaştığı için her hasat önemli.</li>
+                                <li data-i18n="al_t2"><strong>İlerleme:</strong> Dört ligde rakip adalar, görev zinciri ve kısa bir eğitim.</li>
+                                <li data-i18n="al_t3"><strong>Web derlemesi:</strong> Godot 4 HTML5 çıktısı, mobil doku sıkıştırmasıyla (ETC2/ASTC) telefon tarayıcısında çalışır.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="project-gallery mt-4">
+                        <img src="assets/games/ancient-lords/shot_1.webp" alt="Ancient Lords" class="gallery-img" loading="lazy">
+                        <img src="assets/games/ancient-lords/shot_2.webp" alt="Ancient Lords" class="gallery-img" loading="lazy">
+                        <img src="assets/games/ancient-lords/shot_3.webp" alt="Ancient Lords" class="gallery-img" loading="lazy">
+                        <img src="assets/games/ancient-lords/shot_4.webp" alt="Ancient Lords" class="gallery-img" loading="lazy">
+                        <img src="assets/games/ancient-lords/shot_5.webp" alt="Ancient Lords" class="gallery-img" loading="lazy">
+                        <img src="assets/games/ancient-lords/shot_6.webp" alt="Ancient Lords" class="gallery-img" loading="lazy">
+                    </div>
+
+                    <div class="game-actions">
+                        <a href="https://celkay.itch.io/ancient-lords" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-small"><i class="fa-brands fa-itch-io"></i> <span data-i18n="al_btn">itch.io'da Oyna</span></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="glass-card protected-card game-card">
+                <a href="https://celkay.itch.io/dungeon-raider" target="_blank" rel="noopener noreferrer" class="game-banner">
+                    <img src="assets/games/dungeon-raider/banner.webp" alt="Dungeon Raider">
+                </a>
+                <div class="protected-header">
+                    <div class="project-info">
+                        <h3><span class="highlight">"Dungeon Raider"</span> - Roguelite Dungeon Shooter</h3>
+                        <span class="role" data-i18n="dr_role">Rol: Solo Geliştirici | Platform: Tarayıcı (PC + mobil) | Teknoloji: three.js + Vite</span>
+                    </div>
+                    <div class="lock-icon"
+                        style="color: #f4be64; border-color: #f4be6433; background: #f4be641a;">
+                        <i class="fa-solid fa-crosshairs"></i>
+                        <span data-i18n="dr_badge">Yayında · Tarayıcıda Oynanır</span>
+                    </div>
+                </div>
+                <div class="protected-body">
+                    <p><strong data-i18n="dr_summary_title"><i class="fa-solid fa-play" style="color:var(--accent-primary);"></i> Proje Özeti:</strong><span data-i18n="dr_summary"> Kahramanın durunca otomatik ateş ettiği, hareket edince kaçtığı, beş bölümlük bir zindanda geçen Archero tarzı bir roguelite.</span></p>
+
+                    <div class="grid grid-2 mt-4" style="gap: 1.5rem; align-items: start;">
+                        <div>
+                            <strong data-i18n="dr_features_title"><i class="fa-solid fa-star" style="color:var(--accent-secondary);"></i> Öne Çıkan Özellikler:</strong>
+                            <ul class="stats-list mt-2">
+                                <li data-i18n="dr_f1"><strong>5 kahraman:</strong> Okçu, Büyücü, Haydut, Şövalye ve Barbar; her birinin kendi saldırısı ve imza geliştirmesi var.</li>
+                                <li data-i18n="dr_f2"><strong>Yetenek yığma:</strong> Koşu içinde seviye atlayıp çoklu atış, sekme, delip geçen ok, ateş, buz ve dönen bıçaklar.</li>
+                                <li data-i18n="dr_f3"><strong>Melek ya da Şeytan:</strong> Her bölümün ortasında bir lütuf ya da güçlü bir pazarlık; bölüm sonlarında boss.</li>
+                                <li data-i18n="dr_f4"><strong>Ekipman:</strong> Dört nadirlik seviyesi, üç aynısını birleştirerek yükseltme ve koşular arası kalıcı gelişim.</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <strong data-i18n="dr_tech_title"><i class="fa-solid fa-wrench" style="color:var(--accent-secondary);"></i> Tasarım ve Teknik Notlar:</strong>
+                            <ul class="stats-list mt-2">
+                                <li data-i18n="dr_t1"><strong>Tek kontrol, iki karar:</strong> Ateş yalnız dururken açıldığı için her adım kaçmak ile vurmak arasında bir seçim.</li>
+                                <li data-i18n="dr_t2"><strong>Kodla bulut kayıt:</strong> İlerleme bir kodla başka cihazda sürdürülebilir.</li>
+                                <li data-i18n="dr_t3"><strong>Hafif paket:</strong> Oyunun tamamı yaklaşık 3 MB; masaüstünde klavye ya da fare, telefonda parmakla sürükleme.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="project-gallery mt-4">
+                        <img src="assets/games/dungeon-raider/shot_1.webp" alt="Dungeon Raider" class="gallery-img" loading="lazy">
+                        <img src="assets/games/dungeon-raider/shot_2.webp" alt="Dungeon Raider" class="gallery-img" loading="lazy">
+                        <img src="assets/games/dungeon-raider/shot_3.webp" alt="Dungeon Raider" class="gallery-img" loading="lazy">
+                        <img src="assets/games/dungeon-raider/shot_4.webp" alt="Dungeon Raider" class="gallery-img" loading="lazy">
+                    </div>
+
+                    <div class="game-actions">
+                        <a href="https://celkay.itch.io/dungeon-raider" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-small"><i class="fa-brands fa-itch-io"></i> <span data-i18n="dr_btn">itch.io'da Oyna</span></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="glass-card protected-card game-card">
+                <a href="https://celkay.itch.io/shadow-throne" target="_blank" rel="noopener noreferrer" class="game-banner">
+                    <img src="assets/games/shadow-throne/banner.webp" alt="Shadow Throne">
+                </a>
+                <div class="protected-header">
+                    <div class="project-info">
+                        <h3><span class="highlight">"Shadow Throne"</span> - Isometric Action RPG</h3>
+                        <span class="role" data-i18n="st_role">Rol: Oyun Tasarımcısı & Geliştirici | Platform: Tarayıcı / PC (klavye + fare) | Motor: Godot 4</span>
+                    </div>
+                    <div class="lock-icon"
+                        style="color: #93c5fd; border-color: #93c5fd33; background: #93c5fd1a;">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <span data-i18n="st_badge">Demo · Geliştiriliyor</span>
+                    </div>
+                </div>
+                <div class="protected-body">
+                    <p><strong data-i18n="st_summary_title"><i class="fa-solid fa-play" style="color:var(--accent-primary);"></i> Proje Özeti:</strong><span data-i18n="st_summary"> Beş şövalyenin şehrin kuzeyindeki mağaraya indiği izometrik bir aksiyon RPG'nin ilk bölüm demosu. Hikâyeyi ve tasarım belgelerini 2024'te yazdım, oynanabilir demo 2026'da çıktı.</span></p>
+
+                    <div class="grid grid-2 mt-4" style="gap: 1.5rem; align-items: start;">
+                        <div>
+                            <strong data-i18n="st_features_title"><i class="fa-solid fa-star" style="color:var(--accent-secondary);"></i> Oyun Mekanikleri:</strong>
+                            <ul class="stats-list mt-2">
+                                <li data-i18n="st_f1"><strong>Dövüş:</strong> Hafif ve ağır kombolar, dokunulmazlık kareli atılma, blok ve kusursuz blok karşı saldırısı. Sarı uyarılar bloklanır, kırmızılardan kaçılır.</li>
+                                <li data-i18n="st_f2"><strong>Yapay zekâ yoldaşlar:</strong> Dört şövalye yanında savaşır, her birinin 1-4 tuşlarında bir yeteneği var. Düşen yoldaş E'ye basılı tutularak kaldırılır.</li>
+                                <li data-i18n="st_f3"><strong>Demo içeriği:</strong> Şehir ve taht odasında geçen giriş, mağaradan buz salonlarına 10 kat, kamp ateşi sahneleri, gizli tüccar ve Buz Hobgoblin Kralı.</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <strong data-i18n="st_tech_title"><i class="fa-solid fa-wrench" style="color:var(--accent-secondary);"></i> Tasarım ve Teknik Notlar:</strong>
+                            <ul class="stats-list mt-2">
+                                <li data-i18n="st_t1"><strong>İki mod:</strong> Hikâye Modu ve tek canla oynanan Ölüm Modu.</li>
+                                <li data-i18n="st_t2"><strong>Prosedürel katlar:</strong> Katlar her girişte yeniden dizilir; ekipman, tılsım ve yeni teknikler kamp ateşinde açılır.</li>
+                                <li data-i18n="st_t3"><strong>Web optimizasyonu:</strong> Doku boyutu ve sıkıştırma ayarlanarak oyun paketi 149 MB'tan 31 MB'a indirildi.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="project-gallery mt-4">
+                        <img src="assets/games/shadow-throne/shot_1.webp" alt="Shadow Throne" class="gallery-img" loading="lazy">
+                        <img src="assets/games/shadow-throne/shot_2.webp" alt="Shadow Throne" class="gallery-img" loading="lazy">
+                        <img src="assets/games/shadow-throne/shot_3.webp" alt="Shadow Throne" class="gallery-img" loading="lazy">
+                        <img src="assets/games/shadow-throne/shot_4.webp" alt="Shadow Throne" class="gallery-img" loading="lazy">
+                        <img src="assets/games/shadow-throne/shot_5.webp" alt="Shadow Throne" class="gallery-img" loading="lazy">
+                        <img src="assets/games/shadow-throne/shot_6.webp" alt="Shadow Throne" class="gallery-img" loading="lazy">
+                    </div>
+
+                    <div class="game-actions">
+                        <a href="https://celkay.itch.io/shadow-throne" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-small"><i class="fa-brands fa-itch-io"></i> <span data-i18n="st_btn">itch.io'da Oyna</span></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="glass-card protected-card game-card">
+                <a href="https://celkay.itch.io/philosophers-stone" target="_blank" rel="noopener noreferrer" class="game-banner">
+                    <img src="assets/games/philosophers-stone/banner.webp" alt="Philosopher's Stone">
+                </a>
+                <div class="protected-header">
+                    <div class="project-info">
+                        <h3><span class="highlight">"Philosopher's Stone"</span> - Multiplayer Hide & Seek</h3>
+                        <span class="role" data-i18n="ps_role">Rol: Oyun Tasarımcısı & Solo Geliştirici | Platform: Windows (2-5 oyuncu, online) | Motor: Godot 4</span>
+                    </div>
+                    <div class="lock-icon"
+                        style="color: #c4b5fd; border-color: #c4b5fd33; background: #c4b5fd1a;">
+                        <i class="fa-solid fa-flask"></i>
+                        <span data-i18n="ps_badge">Yayında · İndirilebilir</span>
+                    </div>
+                </div>
+                <div class="protected-body">
+                    <p><strong data-i18n="ps_summary_title"><i class="fa-solid fa-play" style="color:var(--accent-primary);"></i> Proje Özeti:</strong><span data-i18n="ps_summary"> Bir bilim adamının evinde kaçan felsefe taşlarını aradığı çok oyunculu bir saklambaç (prop hunt). Taşlar arıya, örümceğe, yılana ya da evdeki herhangi bir eşyaya dönüşebilir.</span></p>
+
+                    <div class="grid grid-2 mt-4" style="gap: 1.5rem; align-items: start;">
+                        <div>
+                            <strong data-i18n="ps_features_title"><i class="fa-solid fa-star" style="color:var(--accent-secondary);"></i> Nasıl Oynanır:</strong>
+                            <ul class="stats-list mt-2">
+                                <li data-i18n="ps_f1"><strong>1'e karşı 4:</strong> Bir oyuncu bilim adamı, diğerleri kaçan taşlar. Bilim adamı banyodayken taşlar 40 saniyede saklanır.</li>
+                                <li data-i18n="ps_f2"><strong>Kazanma:</strong> Bilim adamı herkesi yakalayıp cam kasaya koyarsa kazanır; 5 dakika dolarsa ya da bilim adamı bayılırsa taşlar kazanır.</li>
+                                <li data-i18n="ps_f3"><strong>Kurtarma:</strong> Yakalanan arkadaş kasanın yanında F'ye basılı tutularak serbest bırakılır.</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <strong data-i18n="ps_tech_title"><i class="fa-solid fa-wrench" style="color:var(--accent-secondary);"></i> Tasarım ve Teknik Notlar:</strong>
+                            <ul class="stats-list mt-2">
+                                <li data-i18n="ps_t1"><strong>Dönüşme mekaniği:</strong> Dokunulan eşyanın şekline geçilir; hareketsiz bir eşyaya dönüşen oyuncu yerinden kıpırdayamaz.</li>
+                                <li data-i18n="ps_t2"><strong>Hayvan formları:</strong> Arı, örümcek ve yılan farklı hareket ve saldırı biçimleriyle bilim adamını yıpratabilir.</li>
+                                <li data-i18n="ps_t3"><strong>Kurulumsuz:</strong> Zip açılıp exe çalıştırılır; arkadaşlarla internetten Radmin VPN üzerinden oynanır.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="project-gallery mt-4">
+                        <img src="assets/games/philosophers-stone/shot_1.webp" alt="Philosopher's Stone" class="gallery-img" loading="lazy">
+                        <img src="assets/games/philosophers-stone/shot_2.webp" alt="Philosopher's Stone" class="gallery-img" loading="lazy">
+                        <img src="assets/games/philosophers-stone/shot_3.webp" alt="Philosopher's Stone" class="gallery-img" loading="lazy">
+                        <img src="assets/games/philosophers-stone/shot_4.webp" alt="Philosopher's Stone" class="gallery-img" loading="lazy">
+                        <img src="assets/games/philosophers-stone/shot_5.webp" alt="Philosopher's Stone" class="gallery-img" loading="lazy">
+                    </div>
+
+                    <div class="game-actions">
+                        <a href="https://celkay.itch.io/philosophers-stone" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-small"><i class="fa-brands fa-itch-io"></i> <span data-i18n="ps_btn">itch.io'dan İndir</span></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="glass-card protected-card game-card">
+                <a href="https://celkay.itch.io/3rd-dimension" target="_blank" rel="noopener noreferrer" class="game-banner">
+                    <img src="assets/games/3rd-dimension/banner.webp" alt="3rd Dimension">
+                </a>
                 <div class="protected-header">
                     <div class="project-info">
                         <h3><span class="highlight">"3rd Dimension"</span> - 3D Tactical Chess</h3>
@@ -134,8 +343,15 @@
                         <img src="assets/screenshot_1.png" alt="3rd Dimension" class="gallery-img">
                         <img src="assets/screenshot_2.png" alt="3rd Dimension" class="gallery-img">
                     </div>
+
+                    <div class="game-actions">
+                        <a href="https://celkay.itch.io/3rd-dimension" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-small"><i class="fa-brands fa-itch-io"></i> <span data-i18n="trdd_btn">itch.io'da Oyna</span></a>
+                    </div>
                 </div>
             </div>
+
+            <h2 class="section-title" style="margin-top: 4rem;" data-i18n="games_other_title">Diğer Oyun Çalışmaları</h2>
+            <p class="section-desc" data-i18n="games_other_desc">itch.io dışında kalan, geliştirmesi süren ya da tasarım ağırlıklı projeler.</p>
 
             <div class="glass-card protected-card">
                 <div class="protected-header">
