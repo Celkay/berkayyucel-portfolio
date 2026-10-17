@@ -131,3 +131,9 @@ body {
 .role {
     color: #c9a77a;
 }
+
+/* Gallery images keep their aspect ratio instead of shrinking to fit */
+.project-gallery .gallery-img {
+    flex: 0 0 auto;
+    width: auto;
+}
