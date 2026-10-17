@@ -8,10 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;900&family=Inter:wght@400;500;600&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="apps-theme.css">
     <!-- FontAwesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -58,14 +57,18 @@
                 deneyimini güçlendiren, analitik altyapısı sağlam, problemi merkeze alan ürün projelerim.</p>
         </div>
     </header>
-    <section id="gizli-projeler" class="section dark-section">
+    <section id="gizli-projeler" class="section">
         <div class="container">
+            <span class="section-eyebrow" data-i18n="eyebrow_products">Ürünler</span>
             <h2 class="section-title" data-i18n="apps_section_title">Seçili & Korumalı Projeler</h2>
             <p class="section-desc" data-i18n="apps_section_desc">Fikri mülkiyet (IP) ve henüz piyasaya sürülmemiş
                 mekanikler nedeniyle temel
                 hatlarıyla paylaştığım yönetsel tasarımlarım.</p>
 
-            <div class="glass-card protected-card">
+            <div class="glass-card protected-card game-card" id="mathquest">
+                <a href="#mathquest" class="game-banner" aria-hidden="true" tabindex="-1">
+                    <img src="assets/mathquest_map.webp" alt="" style="aspect-ratio: 1920 / 640;">
+                </a>
                 <div class="protected-header">
                     <div class="project-info">
                         <h3>SaaS & EdTech: <span class="highlight">"MathQuest"</span> (EduPlay Analytics)</h3>
@@ -147,7 +150,7 @@
                 </div>
             </div>
 
-            <div class="glass-card protected-card mt-4">
+            <div class="glass-card protected-card game-card" id="sentinel">
                 <div class="protected-header">
                     <div class="project-info">
                         <h3>SaaS & Security: <span class="highlight">"Sentinel"</span></h3>
@@ -178,30 +181,35 @@
         <button class="lightbox-next"><i class="fa-solid fa-chevron-right"></i></button>
     </div>
 
-    <section id="iletisim-bolumu" class="section dark-section">
-        <div class="container" style="text-align: center;">
-            <h2 class="section-title" data-i18n="contact_title">İletişime Geçin</h2>
-            <p class="section-desc" style="margin: 0 auto 3rem; text-align: center;" data-i18n="contact_desc">Yeni projeler,
-                işbirlikleri veya sadece
-                tanışmak için bana aşağıdaki kanallardan
-                ulaşabilirsiniz.</p>
+    <section id="iletisim-bolumu" class="section">
+        <div class="container">
+            <div class="contact-head">
+                <div>
+                    <span class="section-eyebrow" data-i18n="eyebrow_contact">İletişim</span>
+                    <h2 class="section-title" data-i18n="contact_title">İletişime Geçin</h2>
+                    <p class="section-desc" data-i18n="contact_desc">Yeni projeler, işbirlikleri veya sadece tanışmak
+                        için bana aşağıdaki kanallardan ulaşabilirsiniz.</p>
+                </div>
+                <a href="mailto:berkayyucl@gmail.com" class="btn btn-primary"><i class="fa-solid fa-envelope"></i>
+                    berkayyucl@gmail.com</a>
+            </div>
 
             <div class="grid grid-3">
                 <a href="mailto:berkayyucl@gmail.com" class="glass-card contact-card">
-                    <div class="card-icon" ><i
+                    <div class="card-icon"><i
                             class="fa-solid fa-envelope"></i></div>
                     <h3>E-Posta</h3>
                     <p>berkayyucl@gmail.com</p>
                 </a>
                 <a href="https://www.linkedin.com/in/berkay-yücel/" target="_blank" rel="noopener noreferrer"
                     class="glass-card contact-card">
-                    <div class="card-icon" style="color: #0a8fd8;"><i
+                    <div class="card-icon"><i
                             class="fa-brands fa-linkedin"></i></div>
                     <h3>LinkedIn</h3>
                     <p data-i18n="contact_linkedin">profilimi incele</p>
                 </a>
                 <a href="tel:+905558988960" class="glass-card contact-card">
-                    <div class="card-icon" style="color: #4ade80;"><i class="fa-solid fa-phone"></i>
+                    <div class="card-icon"><i class="fa-solid fa-phone"></i>
                     </div>
                     <h3 data-i18n="contact_phone">Telefon</h3>
                     <p>+90 555 898 89 60</p>

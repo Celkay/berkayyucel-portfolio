@@ -8,10 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;900&family=Inter:wght@400;500;600&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="games-theme.css">
     <!-- FontAwesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -65,8 +64,9 @@
             <a href="#3rd-dimension"><img src="assets/games/3rd-dimension/cover.webp" alt="3rd Dimension" width="630" height="500"><span>3rd Dimension</span></a>
         </nav>
     </header>
-    <section id="gizli-projeler" class="section dark-section">
+    <section id="gizli-projeler" class="section">
         <div class="container">
+            <span class="section-eyebrow" data-i18n="eyebrow_itch">itch.io</span>
             <h2 class="section-title" data-i18n="games_section_title">itch.io'daki Oyunlarım</h2>
             <p class="section-desc" data-i18n="games_section_desc">Tasarımını, sistemlerini ve kodunu baştan sona kendim yaptığım, itch.io'da yayında olan oyunlarım.</p>
 
@@ -360,7 +360,8 @@
                 </div>
             </div>
 
-            <h2 class="section-title" style="margin-top: 4rem;" data-i18n="games_other_title">Diğer Oyun Çalışmaları</h2>
+            <span class="section-eyebrow" style="margin-top: 4rem;" data-i18n="eyebrow_other">Arşiv</span>
+            <h2 class="section-title" data-i18n="games_other_title">Diğer Oyun Çalışmaları</h2>
             <p class="section-desc" data-i18n="games_other_desc">itch.io dışında kalan, geliştirmesi süren ya da tasarım ağırlıklı projeler.</p>
 
             <div class="glass-card protected-card">
@@ -558,30 +559,35 @@
         <button class="lightbox-next"><i class="fa-solid fa-chevron-right"></i></button>
     </div>
 
-    <section id="iletisim-bolumu" class="section dark-section">
-        <div class="container" style="text-align: center;">
-            <h2 class="section-title" data-i18n="contact_title">İletişime Geçin</h2>
-            <p class="section-desc" style="margin: 0 auto 3rem; text-align: center;" data-i18n="contact_desc">Yeni projeler,
-                işbirlikleri veya sadece
-                tanışmak için bana aşağıdaki kanallardan
-                ulaşabilirsiniz.</p>
+    <section id="iletisim-bolumu" class="section">
+        <div class="container">
+            <div class="contact-head">
+                <div>
+                    <span class="section-eyebrow" data-i18n="eyebrow_contact">İletişim</span>
+                    <h2 class="section-title" data-i18n="contact_title">İletişime Geçin</h2>
+                    <p class="section-desc" data-i18n="contact_desc">Yeni projeler, işbirlikleri veya sadece tanışmak
+                        için bana aşağıdaki kanallardan ulaşabilirsiniz.</p>
+                </div>
+                <a href="mailto:berkayyucl@gmail.com" class="btn btn-primary"><i class="fa-solid fa-envelope"></i>
+                    berkayyucl@gmail.com</a>
+            </div>
 
             <div class="grid grid-3">
                 <a href="mailto:berkayyucl@gmail.com" class="glass-card contact-card">
-                    <div class="card-icon" ><i
+                    <div class="card-icon"><i
                             class="fa-solid fa-envelope"></i></div>
                     <h3>E-Posta</h3>
                     <p>berkayyucl@gmail.com</p>
                 </a>
                 <a href="https://www.linkedin.com/in/berkay-yücel/" target="_blank" rel="noopener noreferrer"
                     class="glass-card contact-card">
-                    <div class="card-icon" style="color: #0a8fd8;"><i
+                    <div class="card-icon"><i
                             class="fa-brands fa-linkedin"></i></div>
                     <h3>LinkedIn</h3>
                     <p data-i18n="contact_linkedin">profilimi incele</p>
                 </a>
                 <a href="tel:+905558988960" class="glass-card contact-card">
-                    <div class="card-icon" style="color: #4ade80;"><i class="fa-solid fa-phone"></i>
+                    <div class="card-icon"><i class="fa-solid fa-phone"></i>
                     </div>
                     <h3 data-i18n="contact_phone">Telefon</h3>
                     <p>+90 555 898 89 60</p>

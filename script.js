@@ -22,6 +22,17 @@ document.querySelectorAll('.nav-links a').forEach(a => {
     if (a.getAttribute('href') === currentPage) a.classList.add('active');
 });
 
+// Work grid filter (home)
+document.querySelectorAll('.work-filter').forEach(btn => {
+    btn.addEventListener('click', () => {
+        const kind = btn.dataset.filter;
+        document.querySelectorAll('.work-filter').forEach(b => b.classList.toggle('active', b === btn));
+        document.querySelectorAll('.work-card').forEach(card => {
+            card.classList.toggle('hidden', kind !== 'all' && card.dataset.kind !== kind);
+        });
+    });
+});
+
 // Simple reveal animation for cards
 const observerOptions = {
     threshold: 0.1,
