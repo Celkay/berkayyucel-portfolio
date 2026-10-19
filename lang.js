@@ -32,6 +32,10 @@ const dictionary = {
         w_mq_desc: "Öğretmen ve öğrenci için oyunlaştırılmış ödev, ölçme ve analitik platformu.",
         w_sen_status: "Geliştiriliyor",
         w_sen_desc: "Güvenlik ve analitik odaklı bir uygulama. Son geliştirme aşamasında.",
+        w_afo_status: "Yakında",
+        w_afo_desc: "Yakında.",
+        afo_badge: "Yakında",
+        afo_summary: " Yakında erişime açılacak.",
 
         // Home v2
         stat_games: "itch.io'da yayında oyun",
@@ -251,6 +255,10 @@ const dictionary = {
         w_mq_desc: "A gamified homework, assessment and analytics platform for teachers and students.",
         w_sen_status: "In Development",
         w_sen_desc: "A security and analytics focused application in its final stage of development.",
+        w_afo_status: "Coming Soon",
+        w_afo_desc: "Coming soon.",
+        afo_badge: "Coming Soon",
+        afo_summary: " Coming soon.",
 
         // Home v2
         stat_games: "games live on itch.io",
